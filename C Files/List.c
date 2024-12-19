@@ -86,7 +86,7 @@ void visit(struct list *ptr){
 }
 
 // Chiedere a Nicco se va bene così
-boolean visit(struct list *ptr, int target) {
+boolean search(struct list *ptr, int target) {
   for (int count = ptr-> head; count != ptr-> tail; count = (count + 1)%ptr-> size)
     if (ptr-> buffer[count] == target) {
       return TRUE;
