@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <stdio.h>
 
 typedef unsigned short int boolean;
 #define TRUE 1
@@ -19,12 +20,15 @@ struct list {
 void init(struct list *ptr, int size); // Prototipo della funzione di inizializzazione di una lista
 boolean pre_insert(struct list *ptr, int value); // Prototipo della funzione di inserimento in testa
 boolean post_insert(struct list *ptr, int value); // Prototipo della funzione di inserimento in coda
-boolean pre_remove(struct list *ptr, int *value);
+boolean pre_remove(struct list *ptr, int *value); // Prototipo della funzione di rimozione in testa
+void visit(struct list *ptr); // Prototipo della funzione di visita per stampa
+boolean search(struct list *ptr, int target); // Prototipo della funzione di visita per ricerca
 
 int main() {
   struct list a;
 
   init(&a, 10);
+  visit(&a);
 
   return 0;
 }
@@ -43,7 +47,7 @@ boolean pre_insert(struct list *ptr, int value) {
   // Questo verifica se la lista è piena TRUE = lista non piena
   if (ptr->head != (ptr->tail + 1) % ptr->size) {
     // Sposto il valore di head al valore precedente (utilizzando la matematica circolare)
-    ptr->head = (ptr->head - 1 + %ptr->size) % ptr->size;
+    ptr->head = (ptr->head - 1 + ptr->size) % ptr->size;
     // Inserisco il nuovo valore.
     ptr->buffer[ptr->head] = value;
     return TRUE;
@@ -73,6 +77,21 @@ boolean pre_remove(struct list *ptr, int *value) {
     return FALSE;
   }
   return TRUE;
+}
+
+void visit(struct list *ptr){
+  // Il for va dal primo elemento (marcato da costruzione con il valore di header) fino al valore tail
+  for(int count = ptr->head; count != ptr->tail; count = (count + 1)%ptr->size)
+    printf("\n buffer[%d] = %d", count, ptr->buffer[count]);
+}
+
+// Chiedere a Nicco se va bene così
+boolean visit(struct list *ptr, int target) {
+  for (int count = ptr-> head; count != ptr-> tail; count = (count + 1)%ptr-> size)
+    if (ptr-> buffer[count] == target) {
+      return TRUE;
+    }
+  return FALSE;
 }
 
 
