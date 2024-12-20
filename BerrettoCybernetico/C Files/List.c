@@ -85,7 +85,7 @@ void visit(struct list *ptr){
     printf("\n buffer[%d] = %d", count, ptr->buffer[count]);
 }
 
-// Chiedere a Nicco se va bene così
+
 boolean search(struct list *ptr, int target) {
   for (int count = ptr-> head; count != ptr-> tail; count = (count + 1)%ptr-> size)
     if (ptr-> buffer[count] == target) {
