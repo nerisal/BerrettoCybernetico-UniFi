@@ -1,97 +1,74 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 typedef unsigned short int boolean;
-#define TRUE 1
-#define FALSE 0
+#define TRUE 1;
+#define FALSE 0;
 
-/*
- * Le liste (per come sono usate in questo corso) non sono dei tipi di dato presente in maniera nativa all'interno del
- * linguaggio C. Dunque le definiamo per mezzo di dati strutturati.
- */
-
-struct list {
-  int *buffer; // Array che contiene effettivamente i valori all'interno della lista
-  int head; // Valore che indica il primo elemento della lista
-  int tail; // Valore che indica l'ultimo elemento della lista
-  int size; // Dimensione della lista
+struct list{
+  int *buffer;
+  int head;
+  int tail;
+  int size;
 };
 
-void init(struct list *ptr, int size); // Prototipo della funzione di inizializzazione di una lista
-boolean pre_insert(struct list *ptr, int value); // Prototipo della funzione di inserimento in testa
-boolean post_insert(struct list *ptr, int value); // Prototipo della funzione di inserimento in coda
-boolean pre_remove(struct list *ptr, int *value); // Prototipo della funzione di rimozione in testa
-void visit(struct list *ptr); // Prototipo della funzione di visita per stampa
-boolean search(struct list *ptr, int target); // Prototipo della funzione di visita per ricerca
+void init(struct list *ptr, int size);
+void visit(struct list *ptr);
+boolean pre_insert(struct list *ptr, int value);
+boolean search(struct list *ptr, int target);
 
-int main() {
+int main(){
   struct list a;
+  int size = 10;
 
-  init(&a, 10);
+  init(&a, size);
+
+  pre_insert(&a, 6);
+  pre_insert(&a, 5);
+  pre_insert(&a, 4);
+  pre_insert(&a, 3);
+  pre_insert(&a, 2);  
+  pre_insert(&a, 1);
+
   visit(&a);
+
+  search(&a ,6);
 
   return 0;
 }
 
-
-// Questa funzione serve per inizializzare una lista. Bisogna passargli anche un valore per la dimensione
-void init(struct list *ptr, int size) {
-  ptr->buffer = (int *) malloc(size * sizeof(int));
-  ptr->size = size;
+void init(struct list *ptr, int size){
+  ptr->buffer = (int *)malloc(sizeof(int)*size);
   ptr->head = 0;
   ptr->tail = 0;
-}
-
-// Si usa il tipo boolean per constatare se la funzione va a buon fine oppure no.
-boolean pre_insert(struct list *ptr, int value) {
-  // Questo verifica se la lista è piena TRUE = lista non piena
-  if (ptr->head != (ptr->tail + 1) % ptr->size) {
-    // Sposto il valore di head al valore precedente (utilizzando la matematica circolare)
-    ptr->head = (ptr->head - 1 + ptr->size) % ptr->size;
-    // Inserisco il nuovo valore.
-    ptr->buffer[ptr->head] = value;
-    return TRUE;
-  }
-  // Ritorna falso se la lista è piena e quindi non è possibile inserire altri dati.
-  return FALSE;
-}
-
-boolean post_insert(struct list *ptr, int value) {
-  // Verifico che la lista non sia piena
-  if (ptr->head != (ptr->tail + 1) % ptr->size) {
-    // Prima inserisco in coda
-    ptr->buffer[ptr->tail] = value;
-    // Poi sposto l'ultimo elemento
-    ptr->tail = (ptr->tail + 1) % ptr->size;
-    return TRUE;
-  }
-  return FALSE;
-}
-
-boolean pre_remove(struct list *ptr, int *value) {
-  // Lista non vuota
-  if (ptr->head != ptr->tail) {
-    *value = ptr->buffer[ptr->head];
-    // Cambio la posizione di head
-    ptr->head = (ptr->head + 1) % ptr->size;
-    return FALSE;
-  }
-  return TRUE;
+  ptr->size = size;
 }
 
 void visit(struct list *ptr){
-  // Il for va dal primo elemento (marcato da costruzione con il valore di header) fino al valore tail
+  printf("\nLista: ");
   for(int count = ptr->head; count != ptr->tail; count = (count + 1)%ptr->size)
-    printf("\n buffer[%d] = %d", count, ptr->buffer[count]);
+    printf("%d ", ptr->buffer[count]);
 }
 
-
-boolean search(struct list *ptr, int target) {
-  for (int count = ptr-> head; count != ptr-> tail; count = (count + 1)%ptr-> size)
-    if (ptr-> buffer[count] == target) {
+boolean search(struct list *ptr, int target){
+  for(int count = ptr->head; count != ptr->tail; count = (count + 1)%ptr->size){
+    if(ptr->buffer[count] == target){
+      printf("Trovato! %d", ptr->buffer[count]);
       return TRUE;
     }
+  }
   return FALSE;
 }
 
+boolean pre_insert(struct list * ptr, int value)
+{
+    if (ptr->head!=(ptr->tail+1)%ptr->size) {   // not full
+        printf("Inserted value: %d\n",value);
+        ptr->head = (ptr->head-1+ptr->size)%ptr->size;
+        ptr->buffer[ptr->head] = value;
+        return TRUE;
+    }
+    else
+        return FALSE;
+}
 
