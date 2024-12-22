@@ -26,22 +26,55 @@ void init(struct list *ptr, int size);
 void visit(struct list *ptr);
 boolean search(struct list *ptr, int target);
 boolean pre_insert(struct list *ptr, int value);
+boolean suf_insert(struct list *ptr, int value);
+boolean pre_remove(struct list *ptr, int *value);
+boolean suf_remove(struct list *ptr, int *value);
 
 int main()
 {
     struct list a;
     int size = 10;
+    int rimosso;
+    int *ptr_rimosso;
+
+    ptr_rimosso = &rimosso;
 
     init(&a, size);
 
-    pre_insert(&a, 5);
-    pre_insert(&a, 4);
-    pre_insert(&a, 3);
     pre_insert(&a, 2);
     pre_insert(&a, 1);
+    visit(&a);
+    printf("\n");
+
+    printf("\nInserisco i valori 3, 5, 6 in coda");
+    suf_insert(&a, 3);
+    suf_insert(&a, 5);
+    suf_insert(&a, 6);
 
     visit(&a);
+    printf("\n");
 
+    printf("\nRimuovo l'ultimo valore");
+    suf_remove(&a, ptr_rimosso);
+    printf("\nÈ stato rimosso il valore: %d", *ptr_rimosso);
+    visit(&a);
+    printf("\n");
+
+    printf("\n%d", a.free);
+    printf("\n%d", a.buffer[a.free].next);
+    printf("\n%d", a.buffer[a.free + 1].next);
+    printf("\n%d", a.buffer[a.free + 2].next);
+    printf("\n%d", a.buffer[a.free + 3].next);
+    printf("\n%d", a.buffer[a.free + 4].next);
+    printf("\n%d", a.buffer[a.free + 5].next);
+    /*
+        printf("\nRimuovo il primo valore");
+        pre_remove(&a, ptr_rimosso);
+        printf("\nÈ stato rimosso il valore: %d", *ptr_rimosso);
+        visit(&a);
+        printf("\n");
+
+    */
     search(&a, 6);
     search(&a, 2);
 
@@ -102,4 +135,70 @@ boolean pre_insert(struct list *ptr, int value)
     }
 
     return FALSE;
+}
+
+boolean suf_insert(struct list *ptr, int value)
+{
+    int moved;
+    int count;
+
+    if (ptr->first != ptr->size)
+    {
+        moved = ptr->free;
+        count = ptr->first;
+
+        while (ptr->buffer[count].next != ptr->size)
+        {
+            count = ptr->buffer[count].next; // Cerco la posizione dell'ultimo valore
+        }
+
+        ptr->buffer[moved].value = value;    // Assegno al primo valore libero il nuovo valore
+        ptr->free = ptr->buffer[moved].next; // Aggiorno il primo valore libero
+        ptr->buffer[count].next = moved;     // Aggiorno il seguente dell'ex-ultimo valore
+        ptr->buffer[moved].next = ptr->size; // Imposto il seguente del nuovo ultimo valore
+
+        return TRUE;
+    }
+
+    return FALSE;
+}
+
+boolean pre_remove(struct list *ptr, int *value)
+{
+    int moved = ptr->free;
+    // Verifico che la lista non sia vuota
+    if (ptr->buffer[ptr->first].next != ptr->size)
+    {
+        *value = ptr->buffer[ptr->first].value;
+
+        ptr->free = ptr->first;
+        ptr->buffer[moved].next = moved;
+        ptr->first = ptr->buffer[ptr->first].next;
+
+        return TRUE;
+    }
+
+    return FALSE;
+}
+
+boolean suf_remove(struct list *ptr, int *value)
+{
+    int moved, *position;
+
+    if (ptr->first != ptr->size)
+    { // not empty
+        position = &(ptr->first);
+        // move to the last element of the LinkedList
+        while (ptr->buffer[*position].next != ptr->size)
+            position = &(ptr->buffer[*position].next);
+        // make available to the caller the value which is removed
+        moved = *position;
+        *value = ptr->buffer[*position].value;
+        *position = ptr->buffer[moved].next;
+        ptr->buffer[moved].next = ptr->free;
+        ptr->free = moved;
+        return TRUE;
+    }
+    else
+        return FALSE;
 }
