@@ -1,3 +1,5 @@
+// Le liste sequenziali sono il tipo di lista più simile ad un comune array
+
 #include <stdio.h>
 #include <stdlib.h>
 
