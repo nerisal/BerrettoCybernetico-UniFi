@@ -29,6 +29,8 @@ boolean pre_insert(struct list *ptr, int value);
 boolean suf_insert(struct list *ptr, int value);
 boolean pre_remove(struct list *ptr, int *value);
 boolean suf_remove(struct list *ptr, int *value);
+boolean ord_insert(struct list *ptr, int value);
+boolean ord_remove(struct list *ptr, int value);
 
 int main()
 {
@@ -50,13 +52,6 @@ int main()
     suf_insert(&a, 3);
     suf_insert(&a, 5);
     suf_insert(&a, 6);
-
-    visit(&a);
-    printf("\n");
-
-    printf("\nRimuovo l'ultimo valore");
-    suf_remove(&a, ptr_rimosso);
-    printf("\nÈ stato rimosso il valore: %d", *ptr_rimosso);
     visit(&a);
     printf("\n");
 
@@ -66,8 +61,28 @@ int main()
     visit(&a);
     printf("\n");
 
+    printf("\nRimuovo l'ultimo valore");
+    suf_remove(&a, ptr_rimosso);
+    printf("\nÈ stato rimosso il valore: %d", *ptr_rimosso);
+    visit(&a);
+    printf("\n");
+
+    printf("\nInserisco il valore 4 in maniera ordinata");
+    ord_insert(&a, 4);
+    visit(&a);
+    printf("\n");
+
+    printf("\nRimuovo il valore 6 in maniera ordinata");
+    ord_remove(&a, 6);
+    visit(&a);
+    printf("\n");
+
+    printf("\nRimuovo il valore 3 in maniera ordinata");
+    ord_remove(&a, 3);
+    visit(&a);
+    printf("\n");
+
     search(&a, 6);
-    search(&a, 2);
 
     return 0;
 }
@@ -133,7 +148,7 @@ boolean suf_insert(struct list *ptr, int value)
     int moved;
     int count;
 
-    if (ptr->first != ptr->size)
+    if (ptr->free != ptr->size)
     {
         moved = ptr->free;
         count = ptr->first;
@@ -158,7 +173,7 @@ boolean pre_remove(struct list *ptr, int *value)
 {
     int moved = ptr->free;
     // Verifico che la lista non sia vuota
-    if (ptr->buffer[ptr->first].next != ptr->size)
+    if (ptr->first != ptr->size)
     {
         *value = ptr->buffer[ptr->first].value;
 
@@ -192,4 +207,63 @@ boolean suf_remove(struct list *ptr, int *value)
     }
     else
         return FALSE;
+}
+
+boolean ord_insert(struct list *ptr, int value)
+{
+    int count;
+    int moved;
+    if (ptr->first != ptr->size)
+    {
+        count = ptr->first;
+
+        while (ptr->buffer[count].value <= value && ptr->buffer[ptr->buffer[count].next].value < value)
+        {
+            count = ptr->buffer[count].next;
+        }
+
+        moved = ptr->free;
+
+        ptr->buffer[moved].value = value;
+        ptr->buffer[moved].next = ptr->buffer[count].next;
+        ptr->buffer[count].next = moved;
+        ptr->free = ptr->buffer[ptr->free].next;
+
+        return TRUE;
+    }
+
+    return FALSE;
+}
+
+boolean ord_remove(struct list *ptr, int value)
+{
+    int count;
+
+    if (ptr->first != ptr->size)
+    {
+        count = ptr->first;
+
+        while (ptr->buffer[ptr->buffer[count].next].value != value)
+        {
+            if (count != ptr->size)
+            {
+                break;
+            }
+            count = ptr->buffer[count].next;
+        }
+
+        if (ptr->buffer[ptr->buffer[count].next].value != value)
+        {
+            printf("\nIl valore che si vuole rimuovere non è presente all'interno della lista");
+            return FALSE;
+        }
+
+        ptr->buffer[count].next = ptr->buffer[ptr->buffer[count].next].next;
+        ptr->free = ptr->buffer[count].next;
+        ptr->buffer[ptr->free].next;
+
+        return TRUE;
+    }
+
+    return FALSE;
 }

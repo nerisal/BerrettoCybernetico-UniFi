@@ -186,7 +186,7 @@ boolean ord_remove(struct list *ptr, int target)
     // Devo prima verificare che la lista non sia vuota
     if (ptr->head != ptr->tail)
     {
-        // Devo fare un ciclo per trovare il valore che voglio vedere
+        // Devo fare un ciclo per trovare il valore che voglio rimuovere
         while (ptr->buffer[count] != target && count != ptr->tail)
             count = (count + 1) % ptr->size;
 
