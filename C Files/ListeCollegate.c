@@ -60,21 +60,12 @@ int main()
     visit(&a);
     printf("\n");
 
-    printf("\n%d", a.free);
-    printf("\n%d", a.buffer[a.free].next);
-    printf("\n%d", a.buffer[a.free + 1].next);
-    printf("\n%d", a.buffer[a.free + 2].next);
-    printf("\n%d", a.buffer[a.free + 3].next);
-    printf("\n%d", a.buffer[a.free + 4].next);
-    printf("\n%d", a.buffer[a.free + 5].next);
-    /*
-        printf("\nRimuovo il primo valore");
-        pre_remove(&a, ptr_rimosso);
-        printf("\nÈ stato rimosso il valore: %d", *ptr_rimosso);
-        visit(&a);
-        printf("\n");
+    printf("\nRimuovo il primo valore");
+    pre_remove(&a, ptr_rimosso);
+    printf("\nÈ stato rimosso il valore: %d", *ptr_rimosso);
+    visit(&a);
+    printf("\n");
 
-    */
     search(&a, 6);
     search(&a, 2);
 
