@@ -1,20 +1,18 @@
 // Liste collegate con array ed indici
 // Ogni elemento si ricorda del suo successivo, gli elementi sono fisicamente disordinati
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 typedef unsigned short int boolean;
 #define TRUE 1;
 #define FALSE 0;
 
-struct record
-{
+struct record {
     int value;
     int next;
 };
 
-struct list
-{
+struct list {
     // Sto creando un array di tipo buffer. Dunque ogni elemento di questo array, è un dato strutturato formato da due valori interi
     struct record *buffer;
     int first;
@@ -32,8 +30,7 @@ boolean suf_remove(struct list *ptr, int *value);
 boolean ord_insert(struct list *ptr, int value);
 boolean ord_remove(struct list *ptr, int value);
 
-int main()
-{
+int main() {
     struct list a;
     int size = 10;
     int rimosso;
@@ -87,8 +84,7 @@ int main()
     return 0;
 }
 
-void init(struct list *ptr, int size)
-{
+void init(struct list *ptr, int size) {
     ptr->buffer = (struct record *)malloc(sizeof(struct record) * size);
     ptr->size = size;
     ptr->free = 0;
@@ -97,21 +93,16 @@ void init(struct list *ptr, int size)
         ptr->buffer[count].next = count + 1;
 }
 
-void visit(struct list *ptr)
-{
-    for (int position = ptr->first; position != ptr->size; position = ptr->buffer[position].next)
-    {
+void visit(struct list *ptr) {
+    for (int position = ptr->first; position != ptr->size; position = ptr->buffer[position].next) {
         printf("\n buffer[%d]=%d", position, ptr->buffer[position].value);
     }
 }
 
-boolean search(struct list *ptr, int target)
-{
+boolean search(struct list *ptr, int target) {
     int count = ptr->first;
-    while (count != ptr->size)
-    {
-        if (ptr->buffer[count].value == target)
-        {
+    while (count != ptr->size) {
+        if (ptr->buffer[count].value == target) {
             printf("\nValore %d trovato", target);
             return TRUE;
         }
@@ -124,13 +115,11 @@ boolean search(struct list *ptr, int target)
     return FALSE;
 }
 
-boolean pre_insert(struct list *ptr, int value)
-{
+boolean pre_insert(struct list *ptr, int value) {
     int moved;
     // Verifico che la lista non sia piena
     // La lista è piena quando il primo elemento vuoto corrisponde con il primo elemento pieno
-    if (ptr->free != ptr->size)
-    {
+    if (ptr->free != ptr->size) {
         moved = ptr->free;
         ptr->free = ptr->buffer[moved].next;  // Aggiorno il valore del nuovo primo dei liberi
         ptr->buffer[moved].value = value;     // Assegno al primo valore libero il nuovo valore
@@ -143,18 +132,15 @@ boolean pre_insert(struct list *ptr, int value)
     return FALSE;
 }
 
-boolean suf_insert(struct list *ptr, int value)
-{
+boolean suf_insert(struct list *ptr, int value) {
     int moved;
     int count;
 
-    if (ptr->free != ptr->size)
-    {
+    if (ptr->free != ptr->size) {
         moved = ptr->free;
         count = ptr->first;
 
-        while (ptr->buffer[count].next != ptr->size)
-        {
+        while (ptr->buffer[count].next != ptr->size && count != ptr->size) {
             count = ptr->buffer[count].next; // Cerco la posizione dell'ultimo valore
         }
 
@@ -169,12 +155,10 @@ boolean suf_insert(struct list *ptr, int value)
     return FALSE;
 }
 
-boolean pre_remove(struct list *ptr, int *value)
-{
+boolean pre_remove(struct list *ptr, int *value) {
     int moved = ptr->free;
     // Verifico che la lista non sia vuota
-    if (ptr->first != ptr->size)
-    {
+    if (ptr->first != ptr->size) {
         *value = ptr->buffer[ptr->first].value;
 
         ptr->free = ptr->first;
@@ -187,12 +171,10 @@ boolean pre_remove(struct list *ptr, int *value)
     return FALSE;
 }
 
-boolean suf_remove(struct list *ptr, int *value)
-{
+boolean suf_remove(struct list *ptr, int *value) {
     int moved, *position;
 
-    if (ptr->first != ptr->size)
-    { // not empty
+    if (ptr->first != ptr->size) { // not empty
         position = &(ptr->first);
         // move to the last element of the LinkedList
         while (ptr->buffer[*position].next != ptr->size)
@@ -204,21 +186,17 @@ boolean suf_remove(struct list *ptr, int *value)
         ptr->buffer[moved].next = ptr->free;
         ptr->free = moved;
         return TRUE;
-    }
-    else
+    } else
         return FALSE;
 }
 
-boolean ord_insert(struct list *ptr, int value)
-{
+boolean ord_insert(struct list *ptr, int value) {
     int count;
     int moved;
-    if (ptr->first != ptr->size)
-    {
+    if (ptr->first != ptr->size) {
         count = ptr->first;
 
-        while (ptr->buffer[count].value <= value && ptr->buffer[ptr->buffer[count].next].value < value)
-        {
+        while (ptr->buffer[count].value <= value && ptr->buffer[ptr->buffer[count].next].value < value) {
             count = ptr->buffer[count].next;
         }
 
@@ -235,26 +213,21 @@ boolean ord_insert(struct list *ptr, int value)
     return FALSE;
 }
 
-boolean ord_remove(struct list *ptr, int value)
-{
+boolean ord_remove(struct list *ptr, int value) {
     int count;
 
-    if (ptr->first != ptr->size)
-    {
+    if (ptr->first != ptr->size) {
         count = ptr->first;
 
-        while (ptr->buffer[ptr->buffer[count].next].value != value)
-        {
-            if (count != ptr->size)
-            {
+        while (ptr->buffer[ptr->buffer[count].next].value != value) {
+            if (count != ptr->size) {
                 break;
             }
             count = ptr->buffer[count].next;
         }
 
-        if (ptr->buffer[ptr->buffer[count].next].value != value)
-        {
-            printf("\nIl valore che si vuole rimuovere non è presente all'interno della lista");
+        if (ptr->buffer[ptr->buffer[count].next].value != value) {
+            printf("\nIl valore che si vuole rimuovere non è prensente all'interno della lista");
             return FALSE;
         }
 

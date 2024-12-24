@@ -5,91 +5,107 @@ typedef unsigned short int boolean;
 #define TRUE 1;
 #define FALSE 0;
 
-struct list
-{
+struct list {
     int value;
     struct list *next;
 };
 
-void init(struct list **ptr);
-void visit(struct list *ptr);
-boolean search(struct list *ptr, int target);
-void pre_insert(struct list **ptr, int value);
-void suf_insert(struct list **ptrptr, struct list *ptr, int value);
+void init(struct list **ptr); // Qui passo un puntatore a puntatore perché la lista nel main() è anch'essa un puntatore
+void visit(struct list **ptr);
+boolean search(struct list **ptr, int value);
+boolean pre_insert(struct list **ptr, int value);
+boolean suf_insert(struct list **ptr, int value);
+boolean pre_remove(struct list **ptr, int *value);
 
-int main()
-{
-    struct list *a; // Qui sto creando un puntatore allo struct list che ho creato globalmente
-
+int main() {
+    struct list *a;
     init(&a);
 
-    pre_insert(&a, 3); // Qui sto passando l'indirizzo di un puntatore, ovvero un puntatore a puntatore
     pre_insert(&a, 2);
     pre_insert(&a, 1);
-    visit(a); // Qui passo l'indirizzo
+    visit(&a);
+    printf("\n");
 
-    suf_insert(&a, a, 4);
+    printf("\nInserisco i valori 3, 5, 6 in coda");
+    suf_insert(&a, 3);
+    suf_insert(&a, 5);
+    suf_insert(&a, 6);
+    visit(&a);
+    printf("\n");
 
-    search(a, 2);
+    search(&a, 1);
 
     return 0;
 }
 
-void init(struct list **ptr)
-{
+void init(struct list **ptr) {
+    // La lista vuota è caratterizzata da ptr == NULL
     *ptr = NULL;
 }
 
-void visit(struct list *ptr)
-{
-    while (ptr != NULL)
-    {
-        printf("\nValue = %d", ptr->value);
-        ptr = ptr->next;
+void visit(struct list **ptr) {
+
+    printf("\nLista: ");
+    while (*ptr != NULL) {
+        int value = (*ptr)->value;
+        printf("%d ", value);
+        ptr = &((*ptr)->next); // Aggiorna il puntatore alla posizione successiva.
     }
 }
 
-boolean search(struct list *ptr, int target)
-{
-    while (ptr != NULL)
-    {
-        if (ptr->value == target)
-        {
-            printf("\nIl valore %d è presente nella lista", target);
+boolean search(struct list **ptr, int value) {
+    while (*ptr != NULL) {
+        if ((*ptr)->value == value) {
+
+            printf("\nL'elemento %d si trova al'interno della lista", value);
             return TRUE;
         }
-        else
+
+        ptr = &((*ptr)->next);
+    }
+
+    printf("\nL'elemento %d non si trova all'interno della lista", value);
+    return FALSE;
+}
+
+boolean pre_insert(struct list **ptr, int value) {
+    struct list *tmp;
+    tmp = (struct list *)malloc(sizeof(struct list));
+    if (tmp != NULL) {
+        tmp->value = value;
+        tmp->next = *ptr;
+        *ptr = tmp;
+
+        return TRUE;
+    }
+    return FALSE;
+}
+
+boolean suf_insert(struct list **ptr, int value) {
+    struct list *tmp;
+    tmp = (struct list *)malloc(sizeof(struct list));
+
+    if (tmp != NULL) {
+        while (*ptr != NULL) // Trovo l'ultimo valore
         {
-            ptr = ptr->next;
+            ptr = &((*ptr)->next); // Se l'elemento in considerazione non è l'ultimo avanzo
         }
+
+        // Effettuo lo scambio dei puntatori
+        tmp->value = value;
+        tmp->next = NULL;
+        *ptr = tmp;
+
+        return TRUE;
     }
 
     return FALSE;
 }
 
-void pre_insert(struct list **ptr, int value)
-{
-    struct list *tmp;
-
-    tmp = (struct list *)malloc(sizeof(struct list));
-    tmp->value = value;
-    tmp->next = *ptr;
-    *ptr = tmp;
-}
-
-void suf_insert(struct list **ptrptr, struct list *ptr, int value)
-{
-    struct list *tmp;
-    int count;
-
-    tmp = (struct list *)malloc(sizeof(struct list));
-    tmp->value = value;
-    tmp->next = NULL;
-
-    while (*ptrptr != NULL)
+boolean pre_remove(struct list **ptr, int *value) {
+    if (*ptr != NULL) // Verifico che la lista non sia vuota
     {
-        count = ptr->next;
     }
 
-    //???
+    return FALSE;
 }
