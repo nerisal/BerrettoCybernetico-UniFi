@@ -18,7 +18,7 @@ boolean suf_insert(struct list **ptr, int value);
 boolean pre_remove(struct list **ptr, int *value);
 boolean suf_remove(struct list **ptr, int *value);
 boolean ord_insert(struct list **ptr, int value);
-boolean ord_remove(struct list **ptrptr, int target);
+boolean ord_remove(struct list **ptr, int target);
 
 int main() {
     struct list *a;
@@ -195,18 +195,18 @@ boolean ord_insert(struct list **ptr, int value) {
     return FALSE;
 }
 
-boolean ord_remove(struct list **ptrptr, int target) {
+boolean ord_remove(struct list **ptr, int target) {
     int value;
     boolean found = FALSE;
 
-    if (*ptrptr != NULL) { // not empty
-        while (*ptrptr != NULL && found == FALSE) {
-            if ((*ptrptr)->value == target) {
-                pre_remove(ptrptr, &value);
+    if (*ptr != NULL) { // not empty
+        while (*ptr != NULL && found == FALSE) {
+            if ((*ptr)->value == target) {
+                pre_remove(ptr, &value);
                 printf("\nValue %d has been removed from the List", value);
                 found = TRUE;
             } else
-                ptrptr = &((*ptrptr)->next);
+                ptr = &((*ptr)->next);
         }
     }
     return found;
