@@ -42,12 +42,12 @@ int main() {
 
     pre_insert(&a, 2);
     pre_insert(&a, 1);
+    suf_insert(&a, 5);
     visit(&a);
     printf("\n");
 
     printf("\nInserisco i valori 3, 5, 6 in coda");
     suf_insert(&a, 3);
-    suf_insert(&a, 5);
     suf_insert(&a, 6);
     visit(&a);
     printf("\n");
@@ -191,25 +191,28 @@ boolean suf_remove(struct list *ptr, int *value) {
 }
 
 boolean ord_insert(struct list *ptr, int value) {
-    int count;
-    int moved;
-    if (ptr->first != ptr->size) {
-        count = ptr->first;
+    boolean found = FALSE;
+    int moved, *position;
 
-        while (ptr->buffer[count].value <= value && ptr->buffer[ptr->buffer[count].next].value < value) {
-            count = ptr->buffer[count].next;
-        }
+    if (ptr->free != ptr->size) { // lista non piena
 
+        // Mi salvo la posizione del primo valore libero prima di modificarla in seguito
         moved = ptr->free;
 
-        ptr->buffer[moved].value = value;
-        ptr->buffer[moved].next = ptr->buffer[count].next;
-        ptr->buffer[count].next = moved;
+        // Dico che il primo libero è il seguente dell'ex primo libero
         ptr->free = ptr->buffer[ptr->free].next;
 
+        // Uso position, assegnandogli l'inidirizzo del primo valore
+        position = &(ptr->first);
+
+        while (*position != ptr->size && ptr->buffer[*position].value < value)
+            position = &(ptr->buffer[*position].next);
+        // insert
+        ptr->buffer[moved].value = value;
+        ptr->buffer[moved].next = *position;
+        *position = moved;
         return TRUE;
     }
-
     return FALSE;
 }
 
