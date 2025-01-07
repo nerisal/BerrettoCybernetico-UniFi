@@ -19,66 +19,35 @@ struct list {
     struct list *next;
 };
 
-
+void swap(struct list **first, struct list **second) {
+    struct list *tmp = *first;
+    *first = *second;
+    *second = tmp;
+}
 
 void merge(struct list **L1, struct list **L2) {
-    struct list **L3 = NULL;
+    // Per prima cosa sistemo l'head della lista
+    struct list **tmp;
 
-    while (*L1 != NULL && *L2 != NULL) {
-        struct list *tmp_first;
-        tmp_first = (struct list *)malloc(sizeof(struct list));
-        struct list *tmp_second;
-        tmp_second = (struct list *)malloc(sizeof(struct list));
+    if ((*L1)->value > (*L2)->next) {
+        swap(*L1, *L2);
+        swap(&(*L1)->next, &(*L2)->next);
+    }
 
-        while (*L3 != NULL) {
-            L3 = &((*L3)->next);
-        }
+    tmp = (*L1)->next;
+    (*L1)->next = L2;
+    L1 = &(*L1)->next;
 
-        if ((*L1)->value > (*L2)->value) {
-            tmp_first->value = (*L2)->value;
-            tmp_second->value = (*L1)->value;
-
-            tmp_first->next = tmp_second;
-            *L3 = tmp_first;
+    while (tmp != NULL && L2 != NULL) {
+        if ((*tmp)->value > (*L2)->value) {
+            L1 = tmp;
+            tmp = &(*L2)->next;
+            (*L2)->next = tmp;
         } else {
-            tmp_first->value = (*L1)->value;
-            tmp_second->value = (*L2)->value;
-
-            tmp_first->next = tmp_second;
-            *L3 = tmp_first;
+            (*tmp)->next = (*L2)->next;
+            (*L1)->next = tmp;
         }
-
-        L1 = &((*L1)->next);
-        L2 = &((*L2)->next);
     }
 
-    while (*L1 != NULL) {
-        struct list *tmp;
-        tmp = (struct list *)malloc(sizeof(struct list));
-
-        while (*L3 != NULL) {
-            L3 = &((*L3)->next);
-        }
-
-        tmp->value = (*L1)->value;
-        tmp->next = NULL;
-        *L3 = tmp;
-
-        L1 = &((*L1)->next);
-    }
-
-    while (*L2 != NULL) {
-        struct list *tmp;
-        tmp = (struct list *)malloc(sizeof(struct list));
-
-        while (*L3 != NULL) {
-            L3 = &((*L3)->next);
-        }
-
-        tmp->value = (*L2)->value;
-        tmp->next = NULL;
-        *L3 = tmp;
-
-        L2 = &((*L2)->next);
-    }
+    // Aggiungere il codice per aggiungere gli eventuali elementi rimasti
 }

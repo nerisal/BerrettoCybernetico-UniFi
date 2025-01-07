@@ -20,34 +20,6 @@ struct list {
     struct list *next;
 };
 
-void init(struct list **ptr) {
-    // La lista vuota è caratterizzata da ptr == NULL
-    *ptr = NULL;
-}
-
-void visit(struct list **ptr) {
-
-    printf("\nLista: ");
-    while (*ptr != NULL) {
-        int value = (*ptr)->value;
-        printf("%d ", value);
-        ptr = &((*ptr)->next); // Aggiorna il puntatore alla posizione successiva.
-    }
-}
-
-boolean pre_insert(struct list **ptr, int value) {
-    struct list *tmp;
-    tmp = (struct list *)malloc(sizeof(struct list));
-    if (tmp != NULL) {
-        tmp->value = value;
-        tmp->next = *ptr;
-        *ptr = tmp;
-
-        return TRUE;
-    }
-    return FALSE;
-}
-
 void invert(struct list **ptr, int N, int K, struct list **pos) {
     int count, i;
     struct list *tmp, **pos_k;
@@ -73,22 +45,4 @@ void invert(struct list **ptr, int N, int K, struct list **pos) {
         }
         *pos = *pos_k;
     }
-}
-
-int main() {
-
-    struct list *a;
-    struct list *pos;
-
-    pre_insert(&a, 7);
-    pre_insert(&a, 1);
-    pre_insert(&a, 5);
-    pre_insert(&a, 6);
-    pre_insert(&a, 4);
-    pre_insert(&a, 2);
-
-    visit(&a);
-    invert(&a, 2, 3, &pos);
-
-    visit(&a);
 }

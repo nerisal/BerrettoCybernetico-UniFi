@@ -20,25 +20,70 @@ struct list {
     int value;
 };
 
-boolean compare_and_swap(struct list **ptr, int *swaps) {
-    struct list **first;
-    struct list **second;
-    struct list **tmp;
+boolean pre_insert(struct list **ptr, int value) {
+    struct list *tmp;
+    tmp = (struct list *)malloc(sizeof(struct list));
+    if (tmp != NULL) {
+        tmp->value = value;
+        tmp->next = *ptr;
+        *ptr = tmp;
 
-    first = ptr;
-    **second = *(*ptr)->next->next;
-
-    while (first != NULL && second != NULL) {
-        if ((*first)->value > (*second)->value) {
-            // Inverto il successivo
-            tmp = (*first)->next;
-            (*first)->next = (*second)->next;
-            (*second)->next = tmp;
-        }
-
-        //??
+        return TRUE;
     }
+    return FALSE;
+}
 
-    first = second;
-    second = (*second)->next->next;
+void printList(struct list *ptr) {
+    while (ptr != NULL) {
+        printf("%d ", ptr->value);
+        ptr = ptr->next;
+    }
+}
+
+void swap(struct list **first, struct list **second) {
+    struct list *tmp = *first;
+    *first = *second;
+    *second = tmp;
+}
+
+void compare_and_swap(struct list **ptr, int *swaps) {
+    struct list **first = ptr;
+    struct list **second = &((*ptr)->next->next);
+
+    while (second != NULL) {
+        if ((*first)->value > (*second)->value) {
+            swap(first, second);
+            swap(&(*first)->next, &(*second)->next);
+
+            (*swaps)++;
+        } else {
+
+            first = second;
+            second = &(*second)->next;
+            second = &(*second)->next;
+        }
+    }
+}
+
+int main(void) {
+    struct list *a = NULL;
+    int swaps = 0;
+
+    pre_insert(&a, 0);
+    pre_insert(&a, 7);
+    pre_insert(&a, 1);
+    pre_insert(&a, 5);
+    pre_insert(&a, 6);
+    pre_insert(&a, 4);
+    pre_insert(&a, 2); 
+
+    printf("\n Linked list before calling swapNodes() ");
+    printList(a);
+
+    compare_and_swap(&a, &swaps);
+
+    printf("\n Linked list after  calling swapNodes(). %d swaps were made ", swaps);
+    printList(a);
+
+    return 0;
 }
