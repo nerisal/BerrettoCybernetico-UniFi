@@ -1,0 +1,4 @@
+-[] Ripassare costo e complessità di un algoritmo
+-[] Studiare tutti gli algoritmi di ordinamento
+-[] Studiare algoritmi di copia delle liste collegate da puntatori
+-[] Segnarsi sui fogli protocollo il mergesort e il quicksort
