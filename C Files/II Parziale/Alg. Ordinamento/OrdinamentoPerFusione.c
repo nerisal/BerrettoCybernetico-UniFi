@@ -77,4 +77,4 @@ void mergesort_r(int *V, int N, int *tmp) {
         mergesort_r(&V[N / 2], N - N / 2, &tmp[N / 2]); // Qui passo la metà destra
         merge(V, N, N / 2, tmp);
     }
-}
+} 
