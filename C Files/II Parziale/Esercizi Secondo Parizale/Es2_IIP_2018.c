@@ -11,7 +11,7 @@ void inv_bubbleSort(int *V, int size) {
 
     for (int j = 0; j < size; j++) {
         for (int i = size - j - 1; i > 0; i--) {
-            if (V[i] < V[i - 1]) {
+            if (V[i] > V[i - 1]) {
                 tmp = V[i];
                 V[i] = V[i - 1];
                 V[i - 1] = tmp;
