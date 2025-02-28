@@ -1,0 +1,3 @@
+/home/neri/Documents/GitHub/BerrettoCybernetico-UniFi/Primo Anno/Programmazione/Esercizio_Programmazione_1/E0b_compilation_example/cmake-build-debug/CMakeFiles/E0b_compilation_example.dir
+/home/neri/Documents/GitHub/BerrettoCybernetico-UniFi/Primo Anno/Programmazione/Esercizio_Programmazione_1/E0b_compilation_example/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/neri/Documents/GitHub/BerrettoCybernetico-UniFi/Primo Anno/Programmazione/Esercizio_Programmazione_1/E0b_compilation_example/cmake-build-debug/CMakeFiles/rebuild_cache.dir
