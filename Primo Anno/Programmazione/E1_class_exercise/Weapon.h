@@ -4,7 +4,7 @@
 class Weapon {
 public:
     // Si creano due variabili s e m all'interno della classe.
-    Weapon(int s, bool m = false) : strength(s), magic(m) {
+    explicit Weapon(int s, bool m = false) : strength(s), magic(m) {
         // Nel corpo del costruttore si possono fare dei controlli sul valore
 
         if (strength <= 0) {
@@ -12,25 +12,14 @@ public:
         }
     }
 
-    int use();
+    // Le funzioni vengono definite nel file Weapon.cpp
+    int use() const;
 
-    void setMagic(bool m) {
-        magic = m;
-    }
+    bool isMagic() const; // Getter
+    void setMagic(bool m); // Setter
 
-    bool isMagic() {
-        return magic;
-    }
-
-    int getStrenght() const {
-        return strength;
-    }
-
-    void setStrenght(int strength) {
-        if (strength > 0) {
-            this->strength = strength;
-        }
-    }
+    int getStrength() const; // Getter
+    void setStrength(int strength); // Setter
 
 protected:
     int strength;

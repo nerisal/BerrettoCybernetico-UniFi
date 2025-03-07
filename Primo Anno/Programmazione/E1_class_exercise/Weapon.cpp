@@ -1,7 +1,7 @@
 #include "Weapon.h"
 
 
-int Weapon::use() {
+int Weapon::use() const {
     int result = strength;
 
     if (magic) {
@@ -9,4 +9,23 @@ int Weapon::use() {
     }
 
     return result;
+}
+
+void Weapon::setMagic(bool m) {
+    magic = m;
+}
+
+bool Weapon::isMagic() const {
+    return magic;
+}
+
+int Weapon::getStrength() const {
+    return strength;
+}
+
+
+void Weapon::setStrength(int strength) {
+    if (strength > 0) {
+        this->strength = strength;
+    }
 }
