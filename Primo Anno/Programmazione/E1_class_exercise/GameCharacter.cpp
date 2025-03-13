@@ -61,13 +61,13 @@ bool GameCharacter::fight(GameCharacter& enemy) {
         hit = weapon->use();
 
     int damage = 0;
-    if (hit > enemy.armor()) {
+    if (hit > enemy.getArmor()) {
         damage = enemy.receiveDamage(hit);
     }
 
     bool success = false;
     if (damage) {
-        std::cout << "You hit the enemy ! HP: " << enemy.HP << std::endl;
+        std::cout << "You hit the enemy ! HP: " << enemy.getHP() << std::endl;
         success = true;
     } else
         cout << "You miss the hit..." << endl;
@@ -75,10 +75,14 @@ bool GameCharacter::fight(GameCharacter& enemy) {
 }
 
 int GameCharacter::receiveDamage(int points) {
-    // TODO
-    // if armor > 4 then points are divided by 3
-    // if armor > 2 then points are divided by 2
-    // if armor >= 1 then points are reduced by 2
+    // TODO: A casa, controllarne la correttezza
+    if (armor > 4) {
+        points /= 3;
+    } else if (armor > 2 && armor <= 4) {
+        points /= 2;
+    } else if (armor >= 1 && armor <= 2) {
+        points -= 2;
+    }
 
     if (points <= 0)
         points = 1;
@@ -92,6 +96,15 @@ int GameCharacter::receiveDamage(int points) {
 
 bool GameCharacter::isLegalFight(GameCharacter& enemy) {
     int maxDistance = 1;
+    bool success = false;
     // FIXME: compute distance and return true if a character is within maxDistance along X or Y
-    return true;
+
+    int distanceX = abs(this->posX - enemy.getPosX());
+    int distanceY = abs(this->posY - enemy.getArmor());
+
+    if (distanceY <= maxDistance || distanceX <= maxDistance) {
+        success = true;
+    }
+
+    return success;
 }

@@ -109,9 +109,11 @@ bool updateGame(const GameEvent& gameEvent, GameCharacter& hero, GameCharacter& 
     }
     case GameEvent::fight: {
         // FIXME a fight should be allowed only if the hero is next to the monster
-        std::cout << "Fight" << std::endl;
-        hero.fight(enemy);
-        break;
+        if (hero.isLegalFight(enemy)) {
+            std::cout << "Fight" << std::endl;
+            hero.fight(enemy);
+            break;
+        }
     }
     case GameEvent::noop: {
         std::cout << "Press: w,a,s,d,f or Q to quit." << std::endl;
@@ -126,7 +128,9 @@ void renderHUD(GameCharacter& hero) {
     std::cout << "Press: w,a,s,d,f or Q to quit." << std::endl;
     std::cout << "Hero - HP: " << hero.getHP() << " - armor: " << hero.getArmor();
     // TODO if the hero has a weapon print its strength
-    std::cout << std::endl;
+    if (hero.getWeapon() != nullptr) {
+        std::cout << "Weapon's Strength: " << hero.getWeapon()->getStrength() << std::endl;
+    }
 }
 
 // render the whole graphics, compositing characters over map
@@ -182,7 +186,7 @@ int main() {
     map.createDungeon(80, 25, 50);
     // create hero and set him/her up
     // TODO instantiate a static "hero" object of type GameCharacter with default parameters
-    GameCharacter hero;
+    GameCharacter hero(10, 10);
     // find a legal start position
     int startX = 0;
     int startY = 0;
