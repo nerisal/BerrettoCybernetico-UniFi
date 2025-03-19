@@ -1,4 +1,4 @@
-# Cos'è questa cartella? ![Julia](https://img.shields.io/badge/-Julia-9558B2?style=for-the-badge&logo=julia&logoColor=white)
+# Cos'è questa cartella?
 
 Questa repo è un tentativo di usare **Julia** con un **Jupyter Notebook** come alternativa **OpenSource** e **gratuita** a **Matlab**. 🚀
 
@@ -8,7 +8,7 @@ Alla fine, **Julia** e **Matlab** non sono altro che strumenti. La cosa importan
 
 ## Perché Julia?
 
-[**Julia**](https://julialang.org/) è un linguaggio di programmazione super veloce pensato per il calcolo scientifico.
+ ![Julia](https://img.shields.io/badge/-Julia-9558B2?style=for-the-badge&logo=julia&logoColor=white) è un linguaggio di programmazione super veloce pensato per il calcolo scientifico.
 ## Cosa ti serve?
 
 Per usare questa direttiva ti serve:
