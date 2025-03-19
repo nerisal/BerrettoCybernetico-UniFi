@@ -14,3 +14,5 @@ Alla fine, **Julia** e **Matlab** non sono altro che strumenti. La cosa importan
 Per usare questa direttiva ti serve:
 - [**Julia**](https://julialang.org/)
 - [**Jupyter**](https://jupyter.org/)
+
+![Julia](https://img.shields.io/badge/-Julia-9558B2?style=for-the-badge&logo=julia&logoColor=white)
