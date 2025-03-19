@@ -1,6 +1,6 @@
 # BerrettoCybernetico-UniFi
 
-Benvenuti nel mio fantastico repository di **programmi in C**! 🎉 Qui troverete una collezione di codici che non solo vi faranno scoprire l'universo della programmazione, ma vi permetteranno anche di capire cosa si prova a *"non avere idea di cosa stai facendo"*, proprio come ogni studente del corso di **Informatica**!
+Benvenuti nel mio fantastico repository di **programmi ed esercizi**! 🎉 Qui troverete una collezione di codici che non solo vi faranno scoprire l'universo della programmazione, ma vi permetteranno anche di capire cosa si prova a *"non avere idea di cosa stai facendo"*, proprio come ogni studente del corso di **Informatica**!
 
 ## Cosa c'è in questo repository?
 
