@@ -1,4 +1,4 @@
-# Cos'è questa cartella?
+# Cos'è questa cartella? ![Julia](https://img.shields.io/badge/-Julia-9558B2?style=for-the-badge&logo=julia&logoColor=white)
 
 Questa repo è un tentativo di usare **Julia** con un **Jupyter Notebook** come alternativa **OpenSource** e **gratuita** a **Matlab**. 🚀
 
@@ -15,4 +15,4 @@ Per usare questa direttiva ti serve:
 - [**Julia**](https://julialang.org/)
 - [**Jupyter**](https://jupyter.org/)
 
-![Julia](https://img.shields.io/badge/-Julia-9558B2?style=for-the-badge&logo=julia&logoColor=white)
+
