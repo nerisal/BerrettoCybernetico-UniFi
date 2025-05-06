@@ -30,8 +30,7 @@ public:
     int getPosX() const {
         return posX;
     }
-
-    void setPosX(int posX) {
+    void setPosX(const int posX) {
         GameCharacter::posX = posX;
     }
 
@@ -44,15 +43,13 @@ public:
     }
 
     int getHP() const;
-
     void setHP(int hp);
 
+    //Weapon è un oggetto, quindi va passato per riferimento con un puntatore.
     Weapon* getWeapon() const;
-
     void setWeapon(Weapon* weapon);
 
     int getArmor() const;
-
     void setArmor(int defense);
 
     bool fight(GameCharacter &enemy) const;

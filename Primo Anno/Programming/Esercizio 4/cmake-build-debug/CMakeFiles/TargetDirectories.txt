@@ -1,0 +1,3 @@
+/home/neri/Documents/GitHub/BerrettoCybernetico-UniFi/Primo Anno/Programming/Esercizio 4/cmake-build-debug/CMakeFiles/E4_abstract_classes_exercise.dir
+/home/neri/Documents/GitHub/BerrettoCybernetico-UniFi/Primo Anno/Programming/Esercizio 4/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/neri/Documents/GitHub/BerrettoCybernetico-UniFi/Primo Anno/Programming/Esercizio 4/cmake-build-debug/CMakeFiles/rebuild_cache.dir

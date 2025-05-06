@@ -1,0 +1,3 @@
+/home/neri/Documents/GitHub/BerrettoCybernetico-UniFi/Primo Anno/Programming/Esercizio 3/cmake-build-debug/CMakeFiles/E3_inheritance_exercise.dir
+/home/neri/Documents/GitHub/BerrettoCybernetico-UniFi/Primo Anno/Programming/Esercizio 3/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/neri/Documents/GitHub/BerrettoCybernetico-UniFi/Primo Anno/Programming/Esercizio 3/cmake-build-debug/CMakeFiles/rebuild_cache.dir

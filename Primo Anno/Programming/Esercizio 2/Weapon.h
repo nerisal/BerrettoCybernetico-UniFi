@@ -21,7 +21,7 @@ public:
         strength = s;
     }
 
-    int getStrength() {
+    int getStrength() const {
         return strength;
     }
 
@@ -29,7 +29,7 @@ public:
         magic = m;
     }
 
-    bool isMagic() {
+    bool isMagic() const {
         return magic;
     }
 
