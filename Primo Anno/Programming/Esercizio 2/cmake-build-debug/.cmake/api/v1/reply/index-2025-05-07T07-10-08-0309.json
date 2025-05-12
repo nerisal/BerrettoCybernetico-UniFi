@@ -8,18 +8,18 @@
 		},
 		"paths" : 
 		{
-			"cmake" : "/home/neri/Documents/Softwares/clion-2024.3.3/bin/cmake/linux/x64/bin/cmake",
-			"cpack" : "/home/neri/Documents/Softwares/clion-2024.3.3/bin/cmake/linux/x64/bin/cpack",
-			"ctest" : "/home/neri/Documents/Softwares/clion-2024.3.3/bin/cmake/linux/x64/bin/ctest",
-			"root" : "/home/neri/Documents/Softwares/clion-2024.3.3/bin/cmake/linux/x64/share/cmake-3.30"
+			"cmake" : "/home/neri/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake",
+			"cpack" : "/home/neri/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cpack",
+			"ctest" : "/home/neri/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/ctest",
+			"root" : "/home/neri/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.31"
 		},
 		"version" : 
 		{
 			"isDirty" : false,
 			"major" : 3,
-			"minor" : 30,
-			"patch" : 5,
-			"string" : "3.30.5",
+			"minor" : 31,
+			"patch" : 6,
+			"string" : "3.31.6",
 			"suffix" : ""
 		}
 	},
@@ -35,7 +35,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cache-v2-382b6649241dc5c34ca3.json",
+			"jsonFile" : "cache-v2-24ce21570472b6b98dde.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -44,7 +44,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cmakeFiles-v1-319f7f8927921d8f7b95.json",
+			"jsonFile" : "cmakeFiles-v1-3dde82d44ad0cfec9a8f.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -66,7 +66,7 @@
 	{
 		"cache-v2" : 
 		{
-			"jsonFile" : "cache-v2-382b6649241dc5c34ca3.json",
+			"jsonFile" : "cache-v2-24ce21570472b6b98dde.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -76,7 +76,7 @@
 		},
 		"cmakeFiles-v1" : 
 		{
-			"jsonFile" : "cmakeFiles-v1-319f7f8927921d8f7b95.json",
+			"jsonFile" : "cmakeFiles-v1-3dde82d44ad0cfec9a8f.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{

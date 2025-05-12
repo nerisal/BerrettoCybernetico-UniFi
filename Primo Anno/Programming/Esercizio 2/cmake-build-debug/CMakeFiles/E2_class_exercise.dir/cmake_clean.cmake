@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/E2_class_exercise.dir/link.d"
   "CMakeFiles/E2_class_exercise.dir/Dice.cpp.o"
   "CMakeFiles/E2_class_exercise.dir/Dice.cpp.o.d"
   "CMakeFiles/E2_class_exercise.dir/Dungeon.cpp.o"
