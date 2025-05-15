@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.9"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "E6_STL_exception_exercise",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "E6_STL_exception_exercise::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-E6_STL_exception_exercise-Debug-c9863a55b407254e2045.json",
+					"name" : "E6_STL_exception_exercise",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/neri/Documents/GitHub/BerrettoCybernetico-UniFi/Primo Anno/Programming/Esercizio 6/cmake-build-debug",
+		"source" : "/home/neri/Documents/GitHub/BerrettoCybernetico-UniFi/Primo Anno/Programming/Esercizio 6"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
