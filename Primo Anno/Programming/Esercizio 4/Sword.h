@@ -3,7 +3,7 @@
 
 #include "Weapon.h"
 
-class Sword : public Weapon {
+class Sword final : public Weapon {
 public:
     explicit Sword(int s, bool m = false, bool v = false);
 
@@ -18,7 +18,7 @@ public:
         return valirian;
     }
 
-    void setValirian(bool valirian) {
+    void setValirian(bool const valirian) {
         Sword::valirian = valirian;
     }
 

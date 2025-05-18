@@ -101,8 +101,11 @@ bool findFreeMapTile(int &x, int &y, const Dungeon &map, std::vector<GameCharact
 }
 
 
-/* FIXME add return value */ createMonsters(int startX, int startY, const int numMonsters, const Dungeon &map) {
-    // FIXME add a vector that may contain any monster, call it result
+std::vector<GameCharacter*> createMonsters(int startX, int startY, const int numMonsters, const Dungeon &map) {
+    // DONE add a vector that may contain any monster, call it result
+    std::vector<GameCharacter*> result; // Deve essere un puntatore, altrimenti sto facendo uno slicing.
+
+
     // FIXME reserve numMonsters elements in the vector
     Dice monsterTypeDice(2);
     Dice relPositionDispl(10);
@@ -141,7 +144,8 @@ bool findFreeMapTile(int &x, int &y, const Dungeon &map, std::vector<GameCharact
         }
         enemy->setPosX(monsterPositionX);
         enemy->setPosY(monsterPositionY);
-        // FIXME add a new monster to the vector
+        // DONE add a new monster to the vector
+        result.push_back(enemy);
     }
     return result;
 }
@@ -257,8 +261,9 @@ void renderHUD(GameCharacter &hero) {
     std::cout << std::endl;
 }
 
-bool checkMonsterPosition(int x, int y, /* FIXME what is the type of enemies ? */ &enemies, char &renderSymbol) {
-    /* FIXME add a for cycle to process each monster in the vector */ {
+bool checkMonsterPosition(int x, int y, std::vector<GameCharacter*> &enemies, char &renderSymbol) {
+    /* FIXME add a for cycle to process each monster in the vector */
+  for (auto const enemy : enemies) {
         if (enemy->getHP()<=0)
             return false;
         if (x == enemy->getPosX() && y == enemy->getPosY()) {

@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "E7_STL_map_exercise",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "E7_STL_map_exercise::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-E7_STL_map_exercise-Debug-e7aced8f5c868d3e8b0f.json",
+					"name" : "E7_STL_map_exercise",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/neri/Documents/GitHub/BerrettoCybernetico-UniFi/Primo Anno/Programming/Esercizio 7/cmake-build-debug",
+		"source" : "/home/neri/Documents/GitHub/BerrettoCybernetico-UniFi/Primo Anno/Programming/Esercizio 7"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
