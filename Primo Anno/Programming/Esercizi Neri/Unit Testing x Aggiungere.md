@@ -1,0 +1,2 @@
+- [ ] Unit Testing
+- [x] Aggiungere Enum	
