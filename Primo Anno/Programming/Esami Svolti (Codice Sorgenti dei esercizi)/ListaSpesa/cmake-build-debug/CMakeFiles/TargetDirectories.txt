@@ -1,0 +1,3 @@
+C:/Users/m3ta/Desktop/ListaSpesa/cmake-build-debug/CMakeFiles/ListaSpesa.dir
+C:/Users/m3ta/Desktop/ListaSpesa/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/m3ta/Desktop/ListaSpesa/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/es6.cpp.dir/es6.cpp.o  -o es6.cpp 

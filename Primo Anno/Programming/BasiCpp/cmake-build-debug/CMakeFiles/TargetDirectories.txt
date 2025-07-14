@@ -1,3 +1,0 @@
-/home/neri/Documents/GitHub/BerrettoCybernetico-UniFi/Primo Anno/Programming/BasiCpp/cmake-build-debug/CMakeFiles/BasiCpp.dir
-/home/neri/Documents/GitHub/BerrettoCybernetico-UniFi/Primo Anno/Programming/BasiCpp/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/neri/Documents/GitHub/BerrettoCybernetico-UniFi/Primo Anno/Programming/BasiCpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir

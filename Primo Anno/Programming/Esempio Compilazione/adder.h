@@ -1,6 +1,0 @@
-#ifndef E0B_COMPILATION_EXAMPLE_ADDER_H
-#define E0B_COMPILATION_EXAMPLE_ADDER_H
-
-int sum(int* array, int num);
-
-#endif //E0B_COMPILATION_EXAMPLE_ADDER_H

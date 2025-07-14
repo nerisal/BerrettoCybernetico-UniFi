@@ -1,3 +1,0 @@
-/home/neri/Documents/GitHub/BerrettoCybernetico-UniFi/Primo Anno/Programming/Esercizio 2/cmake-build-debug/CMakeFiles/E2_class_exercise.dir
-/home/neri/Documents/GitHub/BerrettoCybernetico-UniFi/Primo Anno/Programming/Esercizio 2/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/neri/Documents/GitHub/BerrettoCybernetico-UniFi/Primo Anno/Programming/Esercizio 2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

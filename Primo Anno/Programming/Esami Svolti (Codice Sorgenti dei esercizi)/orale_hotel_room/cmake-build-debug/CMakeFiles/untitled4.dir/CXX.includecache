@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/martinabuccioni/Desktop/Turing/Programmazione/CLionProjects/untitled4/Hotel.h
+Room.h
+/Users/martinabuccioni/Desktop/Turing/Programmazione/CLionProjects/untitled4/Room.h
+iostream
+-
+
+/Users/martinabuccioni/Desktop/Turing/Programmazione/CLionProjects/untitled4/Room.h
+iostream
+-
+list
+-
+
+/Users/martinabuccioni/Desktop/Turing/Programmazione/CLionProjects/untitled4/main.cpp
+iostream
+-
+Room.h
+/Users/martinabuccioni/Desktop/Turing/Programmazione/CLionProjects/untitled4/Room.h
+Hotel.h
+/Users/martinabuccioni/Desktop/Turing/Programmazione/CLionProjects/untitled4/Hotel.h
+

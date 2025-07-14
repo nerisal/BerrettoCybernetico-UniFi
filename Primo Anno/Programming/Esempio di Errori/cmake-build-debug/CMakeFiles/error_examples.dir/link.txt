@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/error_examples.dir/main.cpp.o -o error_examples
