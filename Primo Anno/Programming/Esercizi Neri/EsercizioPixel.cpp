@@ -5,7 +5,7 @@ private:
 	int B;
 	
 public:
-	Pixel() : R(0), G(0), B(0) {}
+	explicit Pixel(int r = 0, int g = 0, int b = 0) : R(r), G(g), B(b) {}
 	
 	int getR() const {
 		return R;
@@ -14,48 +14,40 @@ public:
 	int getG() const{
 		return G;
 	}
-
 	
 	int getB() const{
 		return B;
 	}
-	
 };
 
 
 class Image {
 public:
-	Image(int w, int h) : width(w), heigth(h), image(w * h) {
-		resolution = width * heigth;
-	}
+	Image(int w, int h) : width(w), height(h), image(w * h), resolution(w * h) {}
 	
 	void setPixel(int x, int y, int R, int G, int B) {
-		if((x * width + y) > resolution)
-			throw std::out_of_range("Exeed image size");
+	        int pos = y * width + x;
+		if(x >= width || y >= height || x < 0 || y < 0)
+			throw std::out_of_range("Exceed image size");
 			
-		if(x < 0 || y > 0)
+		if(R < 0 || G < 0 || B < 0)
 			throw std::invalid_argument("Negative position");
 			
 		Pixel p = Pixel(R, G, B);
-		vector[x + heigth * y]] = p;
+		image[pos] = p;
 	}
 	
-	Pixel getPixel(int x, int) {
-		if((x * width + y) > resolution)
-			throw std::out_of_range("Exeed image size");
-			
-		if(x < 0 || y > 0)
-			throw std::invalid_argument("Negative position");
-			
-		auto p = vector[x + heigth * y];
-		
-		cout << "Red: " << p.getR() << " Green: " << p.getG() << " Blue: " << p.getB();
-		return p;
+	Pixel getPixel(int x, int y) {
+	        int pos = y * width + x;
+		if(x >= width || y >= height || x < 0 || y < 0)
+			throw std::out_of_range("Exceed image size");
+
+		return image[pos];
 	}
 	
 private:
 	std::vector<Pixel> image;
 	int width;
-	int heigth;
+	int height;
 	int resolution;
 };
