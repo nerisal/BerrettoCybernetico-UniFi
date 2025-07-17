@@ -20,7 +20,6 @@ public:
 	}
 };
 
-
 class Image {
 public:
 	Image(int w, int h) : width(w), height(h), image(w * h), resolution(w * h) {}
