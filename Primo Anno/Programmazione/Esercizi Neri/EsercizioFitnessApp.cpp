@@ -67,7 +67,7 @@ void App::add_activity(std::string name, int mult, int duration) {
   
 void App::remove_activity(std::unique_ptr<Activity> activity) {
     for (auto it = activity_list.begin(); it != activity_list.end(); ++it) {
-        if (it->get() == activity_ptr) {
+        if (it->get() == activity) {
             const Activity* act = it->get();
             
             // Aggiorna i valori di tracking sottraendo
