@@ -37,12 +37,16 @@ public:
 
         width = right.width;
         height = right.height;
-
+        
+        if(buffer != nullptr) {
+          delete[] buffer;
+        }
+        buffer = new Pixel[right.width * right.height];
+        
         for(int i = 0; i < width * height; i++)
             buffer[i] = right.buffer[i];
 
         return *Image;
-
     }
 
     void load(std::string name) {

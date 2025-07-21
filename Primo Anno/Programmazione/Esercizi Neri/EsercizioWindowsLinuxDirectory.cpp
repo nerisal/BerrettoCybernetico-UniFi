@@ -10,14 +10,16 @@ public:
 	
 	virtual bool create(string aName) override {
 		name = aName;
+		return true;
 	}
 	
 	virtual bool move(string newName) override {
 		name = newName;
+		return true;
 	}
 	
 	virtual bool isHidden() const override {
-		if(name[0] = '.')
+		if(name[0] == '.')
 			return true;
 			
 		return false;
@@ -28,40 +30,45 @@ public:
 	}
 };
 
-class LinuxDirectory() : public Directory {
+class LinuxDirectory : public Directory {
 public:
 	virtual ~LinuxDirectory() {}
 	
 	virtual bool create(string aName) override {
 		name = aName;
+		return true;
 	}
 	
 	virtual bool move(string newName) override {
 		name = newName;
+		return true;
 	} 
 	
 	virtual void list() override {
-		for(auto it = list.end(); it != list.begin(); --it){
-			if(!(*it).isHidden())
-				cout << (*(prev(it, 1))).getName() << endl;
-		}
+		for (auto it = files.rbegin(); it != files.rend(); ++it) {
+                    if (!(*it)->isHidden()) {
+                        cout << (*it)->getName() << endl;
+                    }
+              }
 	}
 };
 
-class WindowsFile() : public File {
+class WindowsFile : public File {
 public:
 	virtual ~WindowsFile() {}
 	
 	virtual bool create(string aName) override {
 		name = aName;
+		return true;
 	}	
 	
 	virtual bool move(string newName) override {
 		name = newName;
+		return true;
 	}
 	
 	virtual bool isHidden() {
-		return isHidden;
+		return is_hidden;
 	}
 	
 	string getName() const {
@@ -69,35 +76,42 @@ public:
 	}
 	
 private:
-	bool isHidden = false;
+	bool is_hidden = false;
 };
 
-class WindowsDirectory : public File {
+class WindowsDirectory : public Directory {
 public:
 	virtual ~WindowsDirectory() {}
 	
 	virtual bool create(string aName) override {
 		name = aName;
+		return true;
 	}
 	
 	virtual bool move(string newName) override {
 		name = newName;
+		return true;
 	}
 	
 	virtual void list() override {
-		for(const auto& file : files)
+		for(const auto& file : files) {
+		
+		    if(!file.isHidden()) {
+		    
 			cout << file.getName() << endl;
+		    }
+		}
 	}
 };
 
 class LinuxFactory : public FSFactory {
 public:
-	virtual Directory* createDirectoryHandler() override {
+	virtual Directory* createDirectory() override {
 		LinuxDirectory* product = new LinuxDirectory();
 		return product;
 	}
 	
-	virtual File* createFileHandler() override {
+	virtual File* createFile() override {
 		LinuxFile* product = new LinuxFile();
 		return product;
 	}
@@ -105,46 +119,42 @@ public:
 
 class WindowsFactory : public FSFactory {
 public:
-	virtual Directory* createDirectoryHandler() override {
+	virtual Directory* createDirectory() override {
 		WindowsDirectory* product = new WindowsDirectory();
 		return product;
 	}
 	
-	virtual LinuxFactory createFileHandler() override {
+	virtual File* createFile() override {
 		WindowsFile* product = new WindowsFile();
 		return product;
 	}
 };
 
 #include <list>
-#include <stdlib>
 
 using namespace std;
 
 int main() {
 	FSFactory* factory;
-	File* file;
-	Directory* dir;
 	
 	bool isWindows;
 	
 	isWindows = false;
 	
 	if(isWindows) {
-		static_cast<WindowsFactory*>(factory) = new WindowsFactory();
+		factory = new WindowsFactory();
 	}else {
-		static_cast<LinuxFactory*>(factory) = new LinuxFactory();
+		factory = new LinuxFactory();
 	}
 	
 	// Posso usare auto perché il sistema operativo è deciso a tempo di compilazione.
-	auto file = factory->createFileHandler();
-	auto dir = factory->createDirectoryHandler();
+	auto file = factory->createFile();
+	auto dir = factory->createDirectory();
 	
 	file->create("test.text");
 	dir->create("/tmp/foo");
 	dir->addFile(*file);
 	dir->move("/tmp/bar");
 	
-	
+	return 0;
 }
-
