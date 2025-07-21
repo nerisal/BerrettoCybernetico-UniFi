@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/es6_list.dir/es6_list.cpp.o -o es6_list 
