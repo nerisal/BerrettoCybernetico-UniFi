@@ -17,13 +17,12 @@ class Rectangle {
 public:
 	virtual ~Rectangle(){};
 	virtual void draw() = 0;
-
 };
 
 
 class RectangleAdapter : private LegacyRectangle , public Rectangle {
 public:
-	RectangleAdapter(int tlx, int tly, int w, int h) : LegacyRectangle(tlx, tly, tlx + w, tly +h){}
+	RectangleAdapter(int tlx, int tly, int w, int h) : LegacyRectangle(tlx, tly, tlx + w, tly + h){}
 	
 	virtual ~RectangleAdapter() {}
 	
