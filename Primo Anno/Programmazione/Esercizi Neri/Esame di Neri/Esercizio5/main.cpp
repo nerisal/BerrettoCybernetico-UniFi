@@ -27,11 +27,11 @@ int main() {
     system.printReservations();
 
     // Erasing a reservation for Esmeralda
-    std::cout << "\nEsmeralda choose to cancel her reservation" << std::endl;
+    std::cout << "\nEsmeralda ha deciso di cancellare la prenotazione" << std::endl;
     system.removeReservation(myClients[3]->getName());
     system.printReservations();
 
-    std::cout << "\nNow Pierino wants to reserve a table for four people" << std::endl;
+    std::cout << "\nOra Pallino vuole prenotare per 4 persone" << std::endl;
     system.makeReservation(4, myClients[1]);
     system.printReservations();
 }
