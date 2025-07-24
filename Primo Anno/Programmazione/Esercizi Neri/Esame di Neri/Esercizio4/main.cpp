@@ -5,8 +5,8 @@
 #include "LinuxFactory.h"
 #include "WindowsFile.h"
 
-#define WINDOWS
-//#define LINUX
+//#define WINDOWS
+#define LINUX
 //#define MACOS
 
 int main () {
