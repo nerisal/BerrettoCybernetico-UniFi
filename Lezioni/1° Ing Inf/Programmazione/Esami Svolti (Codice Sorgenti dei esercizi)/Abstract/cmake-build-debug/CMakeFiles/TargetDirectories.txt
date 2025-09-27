@@ -1,0 +1,3 @@
+C:/Users/m3ta/Desktop/Abstract/cmake-build-debug/CMakeFiles/Abstract.dir
+C:/Users/m3ta/Desktop/Abstract/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/m3ta/Desktop/Abstract/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,19 @@
+- [x] Grandezze elettriche fondamentali. 
+- [ ] [Teoria](https://e-l.unifi.it/mod/folder/view.php?id=1458814 "Teoria") dei Circuiti e suoi limiti di applicabilità. 
+- [x] Leggi di Kirchhoff. 
+- [x] Componenti passivi relazionali. Componenti attivi. 
+- [x] Connessioni serie e parallelo di componenti. Partitore di tensione e di corrente. 
+- [x] Trasformazioni stella-triangolo. Principio di sovrapposizione degli effetti. 
+- [x] Teoremi di Millman, di Thevenin, di Norton. 
+- [x] Metodi di analisi su base maglie e su base nodi.
+- [x] Componenti attivi. Generatori controllati. Analisi di reti resistive contenenti componenti attivi. 
+- [ ] Trasformatori ideali. Induttanze mutuamente accoppiate. Cenni all'amplificatore operazionale e ai circuiti che lo comprendono.
+- [ ] Analisi mediante soluzione di equazioni differenziali. Risposta transitoria e risposta permanente. 
+- [ ] Calcolo della risposta a regime con eccitazioni costanti e con eccitazioni sinusoidali.
+- [ ] Valore efficace. Fasori. Circuiti equivalenti nel dominio dei fasori.
+- [ ] Potenza attiva, fattore di potenza, potenza reattiva, potenza apparente e potenza complessa. Triangolo delle potenze. Conservazione della potenza complessa. 
+- [ ] Rifasamento. Teorema del massimo trasferimento di potenza.
+- [ ] Funzione di rete. Risposta in frequenza, risposta in ampiezza e risposta in fase. 
+- [ ] Circuiti risonanti serie e parallelo. Coefficiente di risonanza. Larghezza di banda. Vari tipi di filtri.
+	- [ ] Reti due porte e loro rappresentazione mediante parametri equivalenti. Teorema di Miller. Parametri di circuito aperto z, di corto circuito y, ibridi h e g. **Capitolo 6 del libro**
+- [ ] [Teoria](https://e-l.unifi.it/mod/folder/view.php?id=1458814 "Teoria") dei circuiti e Machine Learning: storia e applicazioni. Il memristore.

@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/es4.cpp.dir/es4.cpp.o  -o es4.cpp 

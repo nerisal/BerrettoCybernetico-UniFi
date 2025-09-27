@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/es6_map.dir/es6_map.cpp.o -o es6_map 

@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/m3tamanj/Desktop/DocumentElementsLayout/DocumentElement.h
+header.h
+/home/m3tamanj/Desktop/DocumentElementsLayout/header.h
+
+/home/m3tamanj/Desktop/DocumentElementsLayout/ImageElement.h
+DocumentElement.h
+/home/m3tamanj/Desktop/DocumentElementsLayout/DocumentElement.h
+
+/home/m3tamanj/Desktop/DocumentElementsLayout/LayoutElement.h
+DocumentElement.h
+/home/m3tamanj/Desktop/DocumentElementsLayout/DocumentElement.h
+
+/home/m3tamanj/Desktop/DocumentElementsLayout/TextElement.h
+DocumentElement.h
+/home/m3tamanj/Desktop/DocumentElementsLayout/DocumentElement.h
+
+/home/m3tamanj/Desktop/DocumentElementsLayout/header.h
+iostream
+-
+string
+-
+list
+-
+
+/home/m3tamanj/Desktop/DocumentElementsLayout/main.cpp
+header.h
+/home/m3tamanj/Desktop/DocumentElementsLayout/header.h
+DocumentElement.h
+/home/m3tamanj/Desktop/DocumentElementsLayout/DocumentElement.h
+LayoutElement.h
+/home/m3tamanj/Desktop/DocumentElementsLayout/LayoutElement.h
+ImageElement.h
+/home/m3tamanj/Desktop/DocumentElementsLayout/ImageElement.h
+TextElement.h
+/home/m3tamanj/Desktop/DocumentElementsLayout/TextElement.h
+

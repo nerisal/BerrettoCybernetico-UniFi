@@ -1,0 +1,7 @@
+/home/mbertini/Downloads/soluzione_180704/cmake-build-debug/CMakeFiles/es5_raw.dir
+/home/mbertini/Downloads/soluzione_180704/cmake-build-debug/CMakeFiles/es5_smartptr.dir
+/home/mbertini/Downloads/soluzione_180704/cmake-build-debug/CMakeFiles/es6_map.dir
+/home/mbertini/Downloads/soluzione_180704/cmake-build-debug/CMakeFiles/es6_list.dir
+/home/mbertini/Downloads/soluzione_180704/cmake-build-debug/CMakeFiles/es7.dir
+/home/mbertini/Downloads/soluzione_180704/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/mbertini/Downloads/soluzione_180704/cmake-build-debug/CMakeFiles/rebuild_cache.dir

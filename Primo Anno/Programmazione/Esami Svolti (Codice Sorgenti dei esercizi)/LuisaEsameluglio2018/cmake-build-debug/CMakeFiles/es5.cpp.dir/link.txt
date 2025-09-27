@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/es5.cpp.dir/es5.cpp.o  -o es5.cpp 

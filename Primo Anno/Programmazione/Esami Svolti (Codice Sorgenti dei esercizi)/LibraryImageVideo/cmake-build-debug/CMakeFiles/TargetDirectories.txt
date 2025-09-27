@@ -1,3 +1,0 @@
-/home/m3tamanj/Desktop/LibraryImageVideo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/m3tamanj/Desktop/LibraryImageVideo/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/m3tamanj/Desktop/LibraryImageVideo/cmake-build-debug/CMakeFiles/LibraryImageVideo.dir

@@ -1,0 +1,60 @@
+// Creo una classe Factory astratta:
+#include <memory>
+
+class Factory {
+public: 
+	virtual std::unique_ptr<Character> CreateCharacter(int spec) = 0;
+	virtual ~Factory() {}
+};
+
+class AssaultTrooperFactory : public Factory {
+public:
+	std::unique_ptr<Character> CreateCharacter(int spec) override;
+
+};
+
+std::unique_ptr<Character> AssaultTrooperFactory::CreateCharacter(int spec) {
+	std::unique_ptr<Stamina> st (new Stamina());
+	std::unique_ptr<AssaultRifle> wp (new AssaultRifle());
+	std::unique_ptr<AssaultTrooper> product (new AssaultTrooper(spec));
+	
+	product->setPhysical(std::move(st));
+	product->setWeapon(std::move(wp));
+	
+	return product;
+}
+
+class SniperFactory : public Factory {
+public:
+	std::unique_ptr<Character> CreateCharacter(int spec) override;
+	
+};
+
+std::unique_ptr<Character> SniperFactory::CreateCharacter(int spec) {
+	std::unique_ptr<HoldBreath> hb (new HoldBreath());
+	std::unique_ptr<SniperRifle> wp (new SniperRifle());
+	std::unique_ptr<Sniper> product (new Sniper(spec));
+	
+	product->setPhysical(std::move(hb));
+	product->setWeapon(std::move(wp));
+	
+	return product;
+}
+
+//Riscrivo solo la Classe Character per accettare uno unique_ptr
+class Character {
+public:
+	void setPhysical(std::unique_ptr<PhysicalFeature> p_pf) {
+		pf = std::move(p_pf);
+	}
+	
+	void setWeapon(std::unique_ptr<Weapon> p_wp){
+		wp = std::move(p_wp);
+	}	
+	
+private:
+	std::unique_ptr<PhysicalFeature> pf;
+	std::unique_ptr<Weapon> wp;
+};
+
+

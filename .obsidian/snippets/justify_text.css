@@ -1,0 +1,21 @@
+/* Reading mode */
+.markdown-preview-view ol,
+.markdown-preview-view li,
+.markdown-preview-view p{
+  text-align: justify;
+  text-justify: inter-word;
+    hyphens: auto;
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+/* Source view and Live Preview */
+.markdown-source-view.mod-cm6 .cm-line {
+  text-align: justify;
+  text-justify: inter-word;
+    hyphens: auto;
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+

@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/m3ta/Desktop/ExCoordiantes/Coordinates.h
+iostream
+-
+
+C:/Users/m3ta/Desktop/ExCoordiantes/main.cpp
+iostream
+-
+Coordinates.h
+C:/Users/m3ta/Desktop/ExCoordiantes/Coordinates.h
+

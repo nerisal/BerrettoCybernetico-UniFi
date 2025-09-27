@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/m3tamanj/Desktop/LibraryImageVideo/Audio.h
+header.h
+/home/m3tamanj/Desktop/LibraryImageVideo/header.h
+
+/home/m3tamanj/Desktop/LibraryImageVideo/Image.h
+header.h
+/home/m3tamanj/Desktop/LibraryImageVideo/header.h
+
+/home/m3tamanj/Desktop/LibraryImageVideo/PlayList.h
+header.h
+/home/m3tamanj/Desktop/LibraryImageVideo/header.h
+Video.h
+/home/m3tamanj/Desktop/LibraryImageVideo/Video.h
+Image.h
+/home/m3tamanj/Desktop/LibraryImageVideo/Image.h
+Audio.h
+/home/m3tamanj/Desktop/LibraryImageVideo/Audio.h
+
+/home/m3tamanj/Desktop/LibraryImageVideo/Video.h
+header.h
+/home/m3tamanj/Desktop/LibraryImageVideo/header.h
+
+/home/m3tamanj/Desktop/LibraryImageVideo/header.h
+string
+-
+iostream
+-
+list
+-
+vector
+-
+
+/home/m3tamanj/Desktop/LibraryImageVideo/main.cpp
+header.h
+/home/m3tamanj/Desktop/LibraryImageVideo/header.h
+PlayList.h
+/home/m3tamanj/Desktop/LibraryImageVideo/PlayList.h
+

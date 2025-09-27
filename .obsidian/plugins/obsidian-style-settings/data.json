@@ -1,0 +1,18 @@
+{
+  "catppuccin-theme-settings@@catppuccin-theme-accents": "ctp-accent-sapphire",
+  "catppuccin-pdf@@ctp-seamless-pdf": false,
+  "things-style@@fancy-code": true,
+  "catppuccin-theme-settings@@catppuccin-theme-dark": "ctp-mocha",
+  "catppuccin-pdf@@ctp-pdf-blend": true,
+  "catppuccin-icon-styles@@ctp-icon-hide": false,
+  "catppuccin-interface-styles@@ctp-bold-folder-title": true,
+  "w95-display-props@@w95-display-themes": "w95-reactionary",
+  "underwater-theme@@underwater-colors-dark": "everforest-dark",
+  "underwater-theme@@underwater-colors-light": "uw-aqua",
+  "underwater-theme@@callout": "callout-solid",
+  "underwater-theme@@vault-icon": "Moon",
+  "underwater-theme@@links-styling": "box-links",
+  "underwater-theme@@workspace-bg": false,
+  "underwater-theme@@focus-mode": false,
+  "anuppuccin-theme-settings@@anuppuccin-theme-light": "ctp-rosepine-light"
+}

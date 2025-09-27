@@ -1,3 +1,0 @@
-C:/Users/m3ta/Desktop/CartesianCoordinates/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/m3ta/Desktop/CartesianCoordinates/cmake-build-debug/CMakeFiles/CartesianCoordinates.dir
-C:/Users/m3ta/Desktop/CartesianCoordinates/cmake-build-debug/CMakeFiles/rebuild_cache.dir

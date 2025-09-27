@@ -1,3 +1,0 @@
-C:/Users/m3ta/Desktop/Ex5Contacts/cmake-build-debug/CMakeFiles/Ex5Contacts.dir
-C:/Users/m3ta/Desktop/Ex5Contacts/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/m3ta/Desktop/Ex5Contacts/cmake-build-debug/CMakeFiles/rebuild_cache.dir

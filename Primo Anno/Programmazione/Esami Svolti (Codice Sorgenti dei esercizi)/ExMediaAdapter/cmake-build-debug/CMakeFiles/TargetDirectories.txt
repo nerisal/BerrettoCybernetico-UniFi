@@ -1,3 +1,0 @@
-C:/Users/m3ta/Desktop/ExMediaAdapter/cmake-build-debug/CMakeFiles/ExMediaAdapter.dir
-C:/Users/m3ta/Desktop/ExMediaAdapter/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/m3ta/Desktop/ExMediaAdapter/cmake-build-debug/CMakeFiles/rebuild_cache.dir
