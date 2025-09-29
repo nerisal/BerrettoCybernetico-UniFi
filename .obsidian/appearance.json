@@ -1,30 +1,3 @@
 {
-  "cssTheme": "Underwater",
-  "enabledCssSnippets": [
-    "justify-text",
-    "mermaid",
-    "custom-callouts",
-    "gallery-cards",
-    "headers",
-    "image_adjustments",
-    "mermaid-pdf",
-    "multi-column",
-    "S - Callouts",
-    "wide-view",
-    "custom_callouts",
-    "gallery_cards",
-    "justify_text",
-    "mermaid_pdf",
-    "multi_column",
-    "pdf_break",
-    "wide_view"
-  ],
-  "theme": "system",
-  "interfaceFontFamily": "Inter",
-  "textFontFamily": "Lexend",
-  "baseFontSize": 17,
-  "baseFontSizeAction": true,
-  "nativeMenus": false,
-  "accentColor": "",
-  "showRibbon": false
+  "cssTheme": "Underwater"
 }

@@ -1,14 +1,1 @@
-{
-  "pdfExportSettings": {
-    "includeName": true,
-    "pageSize": "A4",
-    "landscape": false,
-    "margin": "0",
-    "downscalePercent": 99
-  },
-  "readableLineLength": true,
-  "showLineNumber": true,
-  "promptDelete": false,
-  "alwaysUpdateLinks": true,
-  "attachmentFolderPath": "Allegati"
-}
+{}

@@ -1,0 +1,201 @@
+{
+  "main": {
+    "id": "09b546f55451cd35",
+    "type": "split",
+    "children": [
+      {
+        "id": "4bd1b1c77bbaef41",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1822d3b295d3b76f",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "01bfd19e0825ddd2",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "d01cdcfe2e77dcee",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical",
+            "autoReveal": false
+          },
+          "icon": "lucide-folder-closed",
+          "title": "Files"
+        }
+      },
+      {
+        "id": "386b0bdc6f47861f",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          },
+          "icon": "lucide-search",
+          "title": "Search"
+        }
+      },
+      {
+        "id": "707f3f18ab61949a",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-tags",
+          "title": "Tags"
+        }
+      },
+      {
+        "id": "f8028db47ac280c5",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {},
+          "icon": "lucide-bookmark",
+          "title": "Bookmarks"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "b2825205b2fec4d0",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "80c09098c4682609",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-coming-in",
+          "title": "Backlinks"
+        }
+      },
+      {
+        "id": "990388eceff0e014",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "Lezioni/2° Ing Inf/Calcolatori.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          },
+          "icon": "links-going-out",
+          "title": "Outgoing links"
+        }
+      },
+      {
+        "id": "129271acdd380dca",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "Lezioni/2° Ing Inf/Calcolatori.md",
+            "followCursor": false,
+            "showSearch": false,
+            "searchQuery": ""
+          },
+          "icon": "lucide-list",
+          "title": "Outline"
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-leaflet-plugin:Open Leaflet Map": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "1822d3b295d3b76f",
+  "lastOpenFiles": [
+    "Lezioni/2° Ing Inf/Calcolatori - Alberto Cardini.pdf",
+    "Lezioni/2° Ing Inf/Calcolatori per Ingegneria Informatica - Home Page.pdf",
+    "Lezioni/2° Ing Inf/Calcolatori.md",
+    "Untitled",
+    "Untitled.md",
+    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esempio esame con soluzioni/soluzione_180704/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdC/CMakeCCompilerId.c",
+    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esempio esame con soluzioni/soluzione_180704/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdCXX/CMakeCXXCompilerId.cpp",
+    "Lezioni/1° Ing Inf/Programmazione/Esami Svolti (Codice Sorgenti dei esercizi)/LibraryImageVideo/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdCXX/CMakeCXXCompilerId.cpp",
+    "Lezioni/1° Ing Inf/Programmazione/Esami Svolti (Codice Sorgenti dei esercizi)/Pixel/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdCXX/CMakeCXXCompilerId.cpp",
+    "Lezioni/1° Ing Inf/Programmazione/Esami Svolti (Codice Sorgenti dei esercizi)/Widget/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdCXX/CMakeCXXCompilerId.cpp",
+    "Lezioni/1° Ing Inf/Programmazione/Esami Svolti (Codice Sorgenti dei esercizi)/ExTemplateStack/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdCXX/CMakeCXXCompilerId.cpp",
+    "Lezioni/1° Ing Inf/Programmazione/Esami Svolti (Codice Sorgenti dei esercizi)/packet_usage/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdCXX/CMakeCXXCompilerId.cpp",
+    "Lezioni/1° Ing Inf/Programmazione/Esami Svolti (Codice Sorgenti dei esercizi)/DocumentElementsLayout/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdCXX/CMakeCXXCompilerId.cpp",
+    "Lezioni/1° Ing Inf/Fondamenti di Informatica/C Files/II Parziale/TODO.md",
+    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esame 12 luglio 2023/1.jpg",
+    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esame 12 luglio 2023/2.jpg",
+    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esame 13 giugno 2024/Immagine 2.jpg",
+    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esame 13 giugno 2024/Immagine 1.jpg",
+    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esame 26 luglio 2023/1.jpg",
+    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esame 26 luglio 2023/3.jpg",
+    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esame 26 luglio 2023/2.jpg",
+    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esame 26 luglio 2023/4.jpg",
+    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esame 27 giugno 2023/1.jpg",
+    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esame 27 giugno 2023/2.jpg",
+    "Lezioni/1° Ing Inf/Calcolo Numerico/Actually is Julia/README.md",
+    "Lezioni/1° Ing Inf/Fondamenti di Informatica/Esercizi Parziale Informatica.md",
+    "Lezioni/1° Ing Inf/Fondamenti di Informatica/Lista cose da ripassare per l'orale.md",
+    "Lezioni/1° Ing Inf/Fondamenti di Informatica/Espressioni Assembler.md",
+    "Lezioni/1° Ing Inf/Fondamenti di Informatica/Sommario per Parziale.md",
+    "Lezioni/1° Ing Inf/Programmazione/Tips per Esercizi.md",
+    "Lezioni/1° Ing Inf/Programmazione/Esercizi AI.md",
+    "Lezioni/1° Ing Inf/Calcolo Numerico/File di Teoria.md",
+    "Lezioni/1° Ing Inf/Fisica/Formulario totale per Orale.md",
+    "Lezioni/1° Ing Inf/Fisica/📚 Programma di Fisica I – Checklist di studio.md",
+    "Lezioni/1° Ing Inf/Analisi/Formulario per I Parziale.md",
+    "Lezioni/1° Ing Inf/Analisi/Formulario EDO 2°.md",
+    "Lezioni/1° Ing Inf/Analisi/Preparazione Esame di Teoria.md",
+    "Lezioni/1° Ing Inf/Analisi/Formulario Integrali Generalizzati.md",
+    "Lezioni/1° Ing Inf/TdC/Tips per Esercizi.md",
+    "Lezioni/1° Ing Inf/TdC/TdC Formulario.md",
+    "Lezioni/1° Ing Inf/TdC/Programma.md",
+    "Lezioni/2° Ing Inf/Analisi Matematica II e Probabilità.md",
+    "Lezioni/2° Ing Inf/Teoremi e Definizioni.md",
+    "Lezioni/2° Ing Inf/Foglio Generale.md",
+    "README.md"
+  ]
+}
