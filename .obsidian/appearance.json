@@ -1,3 +1,14 @@
 {
-  "cssTheme": "Underwater"
+  "cssTheme": "Underwater",
+  "enabledCssSnippets": [
+    "wide_view",
+    "pdf_break",
+    "multi_column",
+    "mermaid_pdf",
+    "justify_text",
+    "image_adjustments",
+    "gallery_cards",
+    "custom_callouts",
+    "headers"
+  ]
 }

@@ -1,20 +1,24 @@
 {
   "main": {
-    "id": "09b546f55451cd35",
+    "id": "8d6d9bcabb34907e",
     "type": "split",
     "children": [
       {
-        "id": "4bd1b1c77bbaef41",
+        "id": "d907d64b8df05f83",
         "type": "tabs",
         "children": [
           {
-            "id": "1822d3b295d3b76f",
+            "id": "81f7083a284ea584",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Lezioni/2° Ing Inf/Foglio Generale.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Foglio Generale"
             }
           }
         ]
@@ -23,11 +27,11 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "01bfd19e0825ddd2",
+    "id": "cab5066103e1626b",
     "type": "mobile-drawer",
     "children": [
       {
-        "id": "d01cdcfe2e77dcee",
+        "id": "63a1d7499e165596",
         "type": "leaf",
         "state": {
           "type": "file-explorer",
@@ -40,7 +44,7 @@
         }
       },
       {
-        "id": "386b0bdc6f47861f",
+        "id": "07ee05737d4afb42",
         "type": "leaf",
         "state": {
           "type": "search",
@@ -57,7 +61,7 @@
         }
       },
       {
-        "id": "707f3f18ab61949a",
+        "id": "07b17b0250a6e366",
         "type": "leaf",
         "state": {
           "type": "tag",
@@ -72,7 +76,7 @@
         }
       },
       {
-        "id": "f8028db47ac280c5",
+        "id": "3b9df310c319b679",
         "type": "leaf",
         "state": {
           "type": "bookmarks",
@@ -85,34 +89,34 @@
     "currentTab": 0
   },
   "right": {
-    "id": "b2825205b2fec4d0",
+    "id": "cb75d536f3d2da00",
     "type": "mobile-drawer",
     "children": [
       {
-        "id": "80c09098c4682609",
+        "id": "a89dc392d6bab3b7",
         "type": "leaf",
         "state": {
           "type": "backlink",
           "state": {
+            "file": "Lezioni/2° Ing Inf/Teoremi e Definizioni.md",
             "collapseAll": false,
-            "extraContext": false,
+            "extraContext": true,
             "sortOrder": "alphabetical",
             "showSearch": false,
             "searchQuery": "",
             "backlinkCollapsed": false,
-            "unlinkedCollapsed": true
+            "unlinkedCollapsed": false
           },
           "icon": "links-coming-in",
           "title": "Backlinks"
         }
       },
       {
-        "id": "990388eceff0e014",
+        "id": "15d42eef3a51242e",
         "type": "leaf",
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "Lezioni/2° Ing Inf/Calcolatori.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           },
@@ -121,12 +125,12 @@
         }
       },
       {
-        "id": "129271acdd380dca",
+        "id": "1de09f5be5ff899d",
         "type": "leaf",
         "state": {
           "type": "outline",
           "state": {
-            "file": "Lezioni/2° Ing Inf/Calcolatori.md",
+            "file": "Lezioni/2° Ing Inf/Calcolatori - Alberto Cardini.pdf",
             "followCursor": false,
             "showSearch": false,
             "searchQuery": ""
@@ -136,66 +140,29 @@
         }
       }
     ],
-    "currentTab": 0
+    "currentTab": 2
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-leaflet-plugin:Open Leaflet Map": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-leaflet-plugin:Open Leaflet Map": false
     }
   },
-  "active": "1822d3b295d3b76f",
+  "active": "81f7083a284ea584",
   "lastOpenFiles": [
     "Lezioni/2° Ing Inf/Calcolatori - Alberto Cardini.pdf",
+    "Lezioni/Allegati/piano_tangente_grafico.png",
+    "Lezioni/Allegati/insieme_connesso_per_archi_grafico.png",
+    "Lezioni/Allegati",
+    "Lezioni/1° Ing Inf/Analisi/Formulario Integrali Generalizzati.pdf",
     "Lezioni/2° Ing Inf/Calcolatori per Ingegneria Informatica - Home Page.pdf",
-    "Lezioni/2° Ing Inf/Calcolatori.md",
-    "Untitled",
-    "Untitled.md",
-    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esempio esame con soluzioni/soluzione_180704/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdC/CMakeCCompilerId.c",
-    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esempio esame con soluzioni/soluzione_180704/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdCXX/CMakeCXXCompilerId.cpp",
-    "Lezioni/1° Ing Inf/Programmazione/Esami Svolti (Codice Sorgenti dei esercizi)/LibraryImageVideo/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdCXX/CMakeCXXCompilerId.cpp",
-    "Lezioni/1° Ing Inf/Programmazione/Esami Svolti (Codice Sorgenti dei esercizi)/Pixel/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdCXX/CMakeCXXCompilerId.cpp",
-    "Lezioni/1° Ing Inf/Programmazione/Esami Svolti (Codice Sorgenti dei esercizi)/Widget/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdCXX/CMakeCXXCompilerId.cpp",
-    "Lezioni/1° Ing Inf/Programmazione/Esami Svolti (Codice Sorgenti dei esercizi)/ExTemplateStack/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdCXX/CMakeCXXCompilerId.cpp",
-    "Lezioni/1° Ing Inf/Programmazione/Esami Svolti (Codice Sorgenti dei esercizi)/packet_usage/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdCXX/CMakeCXXCompilerId.cpp",
-    "Lezioni/1° Ing Inf/Programmazione/Esami Svolti (Codice Sorgenti dei esercizi)/DocumentElementsLayout/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdCXX/CMakeCXXCompilerId.cpp",
-    "Lezioni/1° Ing Inf/Fondamenti di Informatica/C Files/II Parziale/TODO.md",
-    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esame 12 luglio 2023/1.jpg",
-    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esame 12 luglio 2023/2.jpg",
-    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esame 13 giugno 2024/Immagine 2.jpg",
-    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esame 13 giugno 2024/Immagine 1.jpg",
-    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esame 26 luglio 2023/1.jpg",
-    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esame 26 luglio 2023/3.jpg",
-    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esame 26 luglio 2023/2.jpg",
-    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esame 26 luglio 2023/4.jpg",
-    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esame 27 giugno 2023/1.jpg",
-    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esame 27 giugno 2023/2.jpg",
-    "Lezioni/1° Ing Inf/Calcolo Numerico/Actually is Julia/README.md",
-    "Lezioni/1° Ing Inf/Fondamenti di Informatica/Esercizi Parziale Informatica.md",
-    "Lezioni/1° Ing Inf/Fondamenti di Informatica/Lista cose da ripassare per l'orale.md",
-    "Lezioni/1° Ing Inf/Fondamenti di Informatica/Espressioni Assembler.md",
-    "Lezioni/1° Ing Inf/Fondamenti di Informatica/Sommario per Parziale.md",
-    "Lezioni/1° Ing Inf/Programmazione/Tips per Esercizi.md",
-    "Lezioni/1° Ing Inf/Programmazione/Esercizi AI.md",
-    "Lezioni/1° Ing Inf/Calcolo Numerico/File di Teoria.md",
-    "Lezioni/1° Ing Inf/Fisica/Formulario totale per Orale.md",
-    "Lezioni/1° Ing Inf/Fisica/📚 Programma di Fisica I – Checklist di studio.md",
-    "Lezioni/1° Ing Inf/Analisi/Formulario per I Parziale.md",
-    "Lezioni/1° Ing Inf/Analisi/Formulario EDO 2°.md",
-    "Lezioni/1° Ing Inf/Analisi/Preparazione Esame di Teoria.md",
-    "Lezioni/1° Ing Inf/Analisi/Formulario Integrali Generalizzati.md",
-    "Lezioni/1° Ing Inf/TdC/Tips per Esercizi.md",
-    "Lezioni/1° Ing Inf/TdC/TdC Formulario.md",
-    "Lezioni/1° Ing Inf/TdC/Programma.md",
-    "Lezioni/2° Ing Inf/Analisi Matematica II e Probabilità.md",
     "Lezioni/2° Ing Inf/Teoremi e Definizioni.md",
-    "Lezioni/2° Ing Inf/Foglio Generale.md",
-    "README.md"
+    "Lezioni/2° Ing Inf/Analisi Matematica II e Probabilità.md"
   ]
 }
