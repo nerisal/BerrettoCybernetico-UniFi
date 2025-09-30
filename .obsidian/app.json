@@ -1,4 +1,5 @@
 {
   "attachmentFolderPath": "Allegati",
-  "defaultViewMode": "preview"
+  "defaultViewMode": "preview",
+  "showUnsupportedFiles": true
 }
