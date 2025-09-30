@@ -20,6 +20,20 @@
               "icon": "lucide-file",
               "title": "Foglio Generale"
             }
+          },
+          {
+            "id": "92c195edac83813d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lezioni/2° Ing Inf/Teoremi e Definizioni.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Teoremi e Definizioni"
+            }
           }
         ]
       }
@@ -98,7 +112,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Lezioni/2° Ing Inf/Teoremi e Definizioni.md",
+            "file": "Lezioni/2° Ing Inf/Foglio Generale.md",
             "collapseAll": false,
             "extraContext": true,
             "sortOrder": "alphabetical",
@@ -130,7 +144,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "Lezioni/2° Ing Inf/Calcolatori - Alberto Cardini.pdf",
+            "file": "Lezioni/2° Ing Inf/Foglio Generale.md",
             "followCursor": false,
             "showSearch": false,
             "searchQuery": ""
@@ -156,13 +170,49 @@
   },
   "active": "81f7083a284ea584",
   "lastOpenFiles": [
-    "Lezioni/2° Ing Inf/Calcolatori - Alberto Cardini.pdf",
-    "Lezioni/Allegati/piano_tangente_grafico.png",
-    "Lezioni/Allegati/insieme_connesso_per_archi_grafico.png",
-    "Lezioni/Allegati",
-    "Lezioni/1° Ing Inf/Analisi/Formulario Integrali Generalizzati.pdf",
-    "Lezioni/2° Ing Inf/Calcolatori per Ingegneria Informatica - Home Page.pdf",
     "Lezioni/2° Ing Inf/Teoremi e Definizioni.md",
-    "Lezioni/2° Ing Inf/Analisi Matematica II e Probabilità.md"
+    "Lezioni/2° Ing Inf/Foglio Generale.md",
+    "Lezioni/2° Ing Inf/Calcolatori - Alberto Cardini.pdf",
+    "Lezioni/2° Ing Inf/Analisi Matematica II e Probabilità.md",
+    "Lezioni/2° Ing Inf/Calcolatori per Ingegneria Informatica - Home Page.pdf",
+    "Lezioni/2° Ing Inf/Calcolatori.md",
+    "Untitled",
+    "Untitled.md",
+    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esempio esame con soluzioni/soluzione_180704/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdC/CMakeCCompilerId.c",
+    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esempio esame con soluzioni/soluzione_180704/cmake-build-debug/CMakeFiles/3.22.3/CompilerIdCXX/CMakeCXXCompilerId.cpp",
+    "Lezioni/1° Ing Inf/Programmazione/Esami Svolti (Codice Sorgenti dei esercizi)/LibraryImageVideo/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdCXX/CMakeCXXCompilerId.cpp",
+    "Lezioni/1° Ing Inf/Programmazione/Esami Svolti (Codice Sorgenti dei esercizi)/Pixel/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdCXX/CMakeCXXCompilerId.cpp",
+    "Lezioni/1° Ing Inf/Programmazione/Esami Svolti (Codice Sorgenti dei esercizi)/Widget/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdCXX/CMakeCXXCompilerId.cpp",
+    "Lezioni/1° Ing Inf/Programmazione/Esami Svolti (Codice Sorgenti dei esercizi)/ExTemplateStack/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdCXX/CMakeCXXCompilerId.cpp",
+    "Lezioni/1° Ing Inf/Programmazione/Esami Svolti (Codice Sorgenti dei esercizi)/packet_usage/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdCXX/CMakeCXXCompilerId.cpp",
+    "Lezioni/1° Ing Inf/Fondamenti di Informatica/C Files/II Parziale/TODO.md",
+    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esame 12 luglio 2023/1.jpg",
+    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esame 12 luglio 2023/2.jpg",
+    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esame 13 giugno 2024/Immagine 2.jpg",
+    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esame 13 giugno 2024/Immagine 1.jpg",
+    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esame 26 luglio 2023/1.jpg",
+    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esame 26 luglio 2023/3.jpg",
+    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esame 26 luglio 2023/2.jpg",
+    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esame 26 luglio 2023/4.jpg",
+    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esame 27 giugno 2023/1.jpg",
+    "Lezioni/1° Ing Inf/Programming/Esami recenti/Esame 27 giugno 2023/2.jpg",
+    "Lezioni/1° Ing Inf/Calcolo Numerico/Actually is Julia/README.md",
+    "Lezioni/1° Ing Inf/Fondamenti di Informatica/Esercizi Parziale Informatica.md",
+    "Lezioni/1° Ing Inf/Fondamenti di Informatica/Lista cose da ripassare per l'orale.md",
+    "Lezioni/1° Ing Inf/Fondamenti di Informatica/Espressioni Assembler.md",
+    "Lezioni/1° Ing Inf/Fondamenti di Informatica/Sommario per Parziale.md",
+    "Lezioni/1° Ing Inf/Programmazione/Tips per Esercizi.md",
+    "Lezioni/1° Ing Inf/Programmazione/Esercizi AI.md",
+    "Lezioni/1° Ing Inf/Calcolo Numerico/File di Teoria.md",
+    "Lezioni/1° Ing Inf/Fisica/Formulario totale per Orale.md",
+    "Lezioni/1° Ing Inf/Fisica/📚 Programma di Fisica I – Checklist di studio.md",
+    "Lezioni/1° Ing Inf/Analisi/Formulario per I Parziale.md",
+    "Lezioni/1° Ing Inf/Analisi/Formulario EDO 2°.md",
+    "Lezioni/1° Ing Inf/Analisi/Preparazione Esame di Teoria.md",
+    "Lezioni/1° Ing Inf/Analisi/Formulario Integrali Generalizzati.md",
+    "Lezioni/1° Ing Inf/TdC/Tips per Esercizi.md",
+    "Lezioni/1° Ing Inf/TdC/TdC Formulario.md",
+    "Lezioni/1° Ing Inf/TdC/Programma.md",
+    "README.md"
   ]
 }
