@@ -1,3 +1,0 @@
-/home/m3tamanj/Desktop/DocumentElementsLayout/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/m3tamanj/Desktop/DocumentElementsLayout/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/m3tamanj/Desktop/DocumentElementsLayout/cmake-build-debug/CMakeFiles/DocumentElementsLayout.dir

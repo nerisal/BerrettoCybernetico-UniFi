@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/m3ta/Desktop/FileDirectory/Directory.h
+vector
+-
+MyFile.h
+C:/Users/m3ta/Desktop/FileDirectory/MyFile.h
+
+C:/Users/m3ta/Desktop/FileDirectory/MyFile.h
+iostream
+-
+string.h
+-
+
+C:/Users/m3ta/Desktop/FileDirectory/main.cpp
+typeinfo
+-
+Directory.h
+C:/Users/m3ta/Desktop/FileDirectory/Directory.h
+

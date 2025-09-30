@@ -1,4 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2017.3.2\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/mingw-w64/x86_64-7.2.0-posix-seh-rt_v5-rev1/mingw64/bin/mingw32-make.exe" "-DCMAKE_C_COMPILER=C:/Program Files/mingw-w64/x86_64-7.2.0-posix-seh-rt_v5-rev1/mingw64/bin/gcc.exe" "-DCMAKE_CXX_COMPILER=C:/Program Files/mingw-w64/x86_64-7.2.0-posix-seh-rt_v5-rev1/mingw64/bin/g++.exe" -G "CodeBlocks - MinGW Makefiles" C:\Users\m3ta\Desktop\CartesianCoordinates
--- Configuring done
--- Generating done
--- Build files have been written to: C:/Users/m3ta/Desktop/CartesianCoordinates/cmake-build-debug

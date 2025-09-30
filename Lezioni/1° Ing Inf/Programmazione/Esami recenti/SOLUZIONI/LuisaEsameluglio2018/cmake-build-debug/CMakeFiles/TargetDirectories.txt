@@ -1,0 +1,6 @@
+/home/luisa/CLionProjects/EserciziOrale/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/luisa/CLionProjects/EserciziOrale/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/luisa/CLionProjects/EserciziOrale/cmake-build-debug/CMakeFiles/es6.cpp.dir
+/home/luisa/CLionProjects/EserciziOrale/cmake-build-debug/CMakeFiles/es5.cpp.dir
+/home/luisa/CLionProjects/EserciziOrale/cmake-build-debug/CMakeFiles/es4.cpp.dir
+/home/luisa/CLionProjects/EserciziOrale/cmake-build-debug/CMakeFiles/es5_list.cpp.dir

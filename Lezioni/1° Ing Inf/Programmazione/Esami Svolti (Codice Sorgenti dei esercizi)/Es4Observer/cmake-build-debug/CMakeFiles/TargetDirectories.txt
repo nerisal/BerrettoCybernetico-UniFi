@@ -1,3 +1,0 @@
-C:/Users/m3ta/Desktop/Es4Observer/cmake-build-debug/CMakeFiles/Es4Observer.dir
-C:/Users/m3ta/Desktop/Es4Observer/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/m3ta/Desktop/Es4Observer/cmake-build-debug/CMakeFiles/rebuild_cache.dir

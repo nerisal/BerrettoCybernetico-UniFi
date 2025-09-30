@@ -1,0 +1,3 @@
+C:/Users/m3ta/Desktop/banc/cmake-build-debug/CMakeFiles/banc.dir
+C:/Users/m3ta/Desktop/banc/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/m3ta/Desktop/banc/cmake-build-debug/CMakeFiles/rebuild_cache.dir

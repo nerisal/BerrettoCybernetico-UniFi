@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/m3ta/Desktop/AccomulatorMinMax/AccumulatorMinMax.h
+iostream
+-
+list
+-
+
+C:/Users/m3ta/Desktop/AccomulatorMinMax/main.cpp
+iostream
+-
+iostream
+-
+AccumulatorMinMax.h
+C:/Users/m3ta/Desktop/AccomulatorMinMax/AccumulatorMinMax.h
+

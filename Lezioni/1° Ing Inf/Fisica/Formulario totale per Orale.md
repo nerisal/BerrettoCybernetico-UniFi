@@ -67,8 +67,6 @@ Dimostrazione per l'equazione dei gas ideali:
 Si considera un modo per passare da uno stato generico A ad uno stato B. Passando da C prima con una Isocora e poi con una Isoterma. Partiamo usando il volume molare, la temperatura ambiente e si cerca di trovare la pressione. $R=p_{0}V_{0}\alpha$
 
 # Ciclo di Carnot
-- [ ] Da Rifare
-
 Si fa fare una trasformazione ciclica che passa per 4 stati, A B C e D. Da A a B si fa una Isoterma alla temperatura T1, da B a C si fa una adiabatica, da C a D si fa una isoterma a temperatura T2 e in fine da D ad A si fa un'altra adiabatica. Si arriva alla conclusione che nel ciclo di Carnot il rendimento $\eta=1-\frac{T_{1}}{T_{2}}$
 
 # Espansione Libera di Un Gas

@@ -1,3 +1,0 @@
-C:/Users/m3ta/Desktop/ExTemplateStack/cmake-build-debug/CMakeFiles/ExTemplateStack.dir
-C:/Users/m3ta/Desktop/ExTemplateStack/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/m3ta/Desktop/ExTemplateStack/cmake-build-debug/CMakeFiles/rebuild_cache.dir

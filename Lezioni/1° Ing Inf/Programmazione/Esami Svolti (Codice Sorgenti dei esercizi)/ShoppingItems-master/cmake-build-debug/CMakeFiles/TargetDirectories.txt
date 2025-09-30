@@ -1,3 +1,0 @@
-C:/Users/UserW7m3ra/Desktop/Projects/ShoppingItems/cmake-build-debug/CMakeFiles/ShoppingItems.dir
-C:/Users/UserW7m3ra/Desktop/Projects/ShoppingItems/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/UserW7m3ra/Desktop/Projects/ShoppingItems/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,3 +1,0 @@
-D:/Unifi/Programmazione/Exams/Widget/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-D:/Unifi/Programmazione/Exams/Widget/cmake-build-debug/CMakeFiles/Widget.dir
-D:/Unifi/Programmazione/Exams/Widget/cmake-build-debug/CMakeFiles/edit_cache.dir
