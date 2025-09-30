@@ -85,6 +85,8 @@ Per usare questa repo serve avere:
 - Selezionare **“Apri Vault esistente”** e scegliere la cartella `BerrettoCybernetico-UniFi` appena clonata.
 - Quando chiesto, attivare i plug-in di terze parti.
 - Aprire _Impostazioni_, nella sezione _Aspetto_ (o simile) si consiglia di attivare tutti quanti gli _snippet css_ per una corretta visualizzazione delle note.
+- **IMPORTANTE!** Aprire _Impostazioni_, nella sezione _File e Collegamenti_ (o simile) attivare l'opzione _Rileva Tutte le Estensioni dei File_ (o simile). Questo perché la repo contiene anche file _Matlab_ (.m), C/C++ (.c/.cpp), etc. Se questa opzione non viene attivata alcune cartelle risulteranno vuote.
+
 
 > **Nota 💡** Il tema scelto per il Vault è _Underwater_. È un tema dall'aspetto moderno e che aggiunge varie funzionalità utili. Funziona bene sia su mobile che su computer. Si consiglia di non modificare il tema. In caso di problemi aprire un Issue su GH.
 
