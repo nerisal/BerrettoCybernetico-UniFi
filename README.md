@@ -97,5 +97,8 @@ Per usare questa repo serve avere:
 
 Ogni contributo è benvenuto! La repo è pensata per essere **uno spazio condiviso**, quindi non avere paura di aggiungere i tuoi materiali: se sono utili a te, lo saranno anche per altri.
 
+## 📝 Licenza
+Questa repository è rilasciata sotto la [Unlicense](https://unlicense.org/).  
+In pratica: **fai icché ti pare**.
 
 
