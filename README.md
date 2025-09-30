@@ -28,7 +28,7 @@ Per mantenere la repo ordinata e utile a tutti:
 
    * i file siano **rinominati in modo chiaro** (es. `Algoritmi_Esercizi.md` invece di `appunti1.md`),
    * vengano inseriti nella **cartella corretta** (es. esercizi in `Esercizi`, formulari in `Formulari`, ecc.).
-   * tutti gli allegati alle note (immagini, video, file audio) siano rinominati utilizzando lo snake_case e posti all'interno della cartella Allegati
+   * tutti gli allegati alle note (immagini, video, file audio) siano rinominati utilizzando lo _snake_case_ e posti all'interno della cartella _Allegati_
 2. **Aggiornati sempre prima di iniziare a lavorare**:
 
    ```bash
@@ -80,11 +80,11 @@ Per usare questa repo serve avere:
 
 3. **Scaricare e aprire Obsidian**
 
-4. **Cambiare le impostazioni di Obsidian:**
+4. **Impostare Obsidian:**
 
-- In Obsidian selezionare **“Apri Vault esistente”** e scegliere la cartella `BerrettoCybernetico-UniFi` appena clonata.
-- In Obsidian, quando chiesto, attivare i plug-in di terze parti.
-- Nelle impostazioni di Obsidian, nella sezione Aspetto (o simile) si consiglia di attivare tutti quanti gli _snippet css_ per una corretta visualizzazione delle note.
+- Selezionare **“Apri Vault esistente”** e scegliere la cartella `BerrettoCybernetico-UniFi` appena clonata.
+- Quando chiesto, attivare i plug-in di terze parti.
+- Aprire _Impostazioni_, nella sezione _Aspetto_ (o simile) si consiglia di attivare tutti quanti gli _snippet css_ per una corretta visualizzazione delle note.
 
 > **Nota 💡** Il tema scelto per il Vault è _Underwater_. È un tema dall'aspetto moderno e che aggiunge varie funzionalità utili. Funziona bene sia su mobile che su computer. Si consiglia di non modificare il tema. In caso di problemi aprire un Issue su GH.
 
