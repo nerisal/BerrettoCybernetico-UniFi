@@ -134,6 +134,21 @@ Il [[#Teorema di Schwarz]] ci dice quando derivate miste opposte sono uguali.
 
 ## Funzioni Omogenee
 Preso $A$ [[#Insieme Cono| cono]] di $\mathbb{R}^n$, $\alpha \in \mathbb{R}$. La funzione $f : A \to \mathbb{R}$ si dice omogenea di grado $\alpha$ su $A$: $$f(tx) = t^{\alpha} f(x) \quad \forall x \in A, \forall t >0$$
+
+## Differenziale Secondo
+Data la funzione $f:A \subseteq \mathbb{R}^{2}\to \mathbb{R}$, $A$ aperto, $f \in C^{2(A),}(x_{0},y_{0}) \in A$. Si definisce *Differenziale Secondo di $f$ in $(x_{0},y_{0})$*: $$d^2f(x_{0},y_{0}):(h,k) \rightarrow f_{xx}(x_{0},y_{0})h^2+2f_{xy}(x_{0},y_{0})hk+f_{yy}(x_{0},y_{0})k^2$$
+
+La formula dettata sopra ricorda quella del doppio prodotto. 
+Si possono utilizzare i termini della definizione di differenziale secondo per definire quella che viene chiamata *Matrice Hessiana*.
+### Matrice Hessiana
+Definita come:
+$$Hf(x_{0},y_{0})=\begin{pmatrix}
+f_{x x}(x_{0},y_{0})  &  f_{xy}(x_{0},y_{0}) \\
+f_{yx}(x_{0},y_{0})  &  f_{yy}(x_{0},y_{0})
+\end{pmatrix}$$
+
+Si conclude che se la funzione $f$ è derivabile almeno due volte ($f \in C^2$) allora per il [[#Teorema di Schwarz]] $f_{xy} = f_{yx}$ dunque la matrice hessiana è *simmetrica*.
+
 # Teoremi
 ## Teorema di Weierstrass
 #non_dimostrato
@@ -191,6 +206,24 @@ Il teorema si divide in due parti:
 Ovvero: $$f_{xy}=f_{yx} \quad f_{yz}= f_{zy} \quad \dots$$
 
 Questo teorema resta valido anche per funzioni che sono derivabili $3$ volte con derivate terze continue: $$f_{xxy}=f_{xyx}=f_{yyx}$$
-# Esercizi
-## Continuità
-Si verifica che 
+
+## Teorema di Eulero
+#non_dimostrato 
+**Enunciato:** Data la funzione $f:A\subseteq \mathbb{R}^{n}\to \mathbb{R}$, differenziabile su $A$ che è cono aperto: $$f \text{ è omogenea di grado } \alpha \iff \nabla f(x)\cdot x=\alpha f(x) \quad \forall x \in A$$
+Da qui si deduce che se $f$ è una omogenea di grado $\alpha$ allora $f_{x_{i}} \quad i = 1, \dots,n$ sono omogenee di grado $\alpha -1$ su $A$
+
+Da questa proprietà se ne ricavano altre che semplificano il calcolo dei limiti per funzioni omogenee.
+
+## Teorema della Formula di Taylor
+### Con Resto Secondo Peano
+#non_dimostrato 
+
+#TODO
+
+### Con Resto Secondo Lagrange 
+#dimostrato 
+
+#TODO 
+
+## Teorema di Fermat
+#dimostrato 
