@@ -149,6 +149,21 @@ f_{yx}(x_{0},y_{0})  &  f_{yy}(x_{0},y_{0})
 
 Si conclude che se la funzione $f$ è derivabile almeno due volte ($f \in C^2$) allora per il [[#Teorema di Schwarz]] $f_{xy} = f_{yx}$ dunque la matrice hessiana è *simmetrica*.
 
+## Punti di Massimo e di Minimo
+Quando si parla di problemi di ottimizzazione e viene richiesto che vengano studiati eventuali punti di massimo o di minimo bisogna tenere presente che questi possono essere individuati fra:
+- I punti stazionari interni alla funzione: $x_{0}\in A\text{ (ad esclusione del bordo di A) } : \nabla f(x_{0})=0$
+	- Disuguaglianze elementari
+- I punti singolari interni alla funzione: $\text{ Punti in cui } f_{x_{0}} \text{ non è differenziabile}$
+	- Linee di Livello
+- I punti di "bordo".
+	- Parametrizzazione del vincolo in modo da ricondurre il problema a uno di Analisi I
+	- ~~Moltiplicatori di Lagrange~~
+
+Abbiamo già visto il [[#Teorema di Weierstrass]] per capire se questi punti esistono o meno.
+
+## Integrali Doppi
+Se gli integrali ("singoli") coincidevano geometricamente all'area sottesa dal grafico della funzione, quelli doppi coincidono geometricamente al volume sotteso dal grafico della funzione e si indicano così: $$\iint f(x,y)dxdy$$
+
 # Teoremi
 ## Teorema di Weierstrass
 #non_dimostrato
@@ -217,13 +232,65 @@ Da questa proprietà se ne ricavano altre che semplificano il calcolo dei limiti
 ## Teorema della Formula di Taylor
 ### Con Resto Secondo Peano
 #non_dimostrato 
-
-#TODO
+**Enunciato:** Presa la funzione $f: A \subseteq \mathbb{R}^n\to \mathbb{R}$, $A$ aperto, $f \in C^2(A)$.  Per ogni $x_{0}\in A$ vale la seguente formula: $$f(x_{0}+h)=f(x_{0})+\sum^{n}_{i=1}{f_{x_{i}}(x_{0})h_{i}}+\frac{1}{2}\sum^{n}_{i,j=1}f_{x_{i}x_{j}}(x_{0})h_{i}h_{j}+o(||h||^2)\quad h\to 0$$
 
 ### Con Resto Secondo Lagrange 
 #dimostrato 
 
-#TODO 
+$\dots$
 
 ## Teorema di Fermat
 #dimostrato 
+Il teorema di Fermat ci aiuta a risolvere problemi di ottimizzazione che in analisi II si riducono alla ricerca di punti di massimo o di minimo e la loro categorizzazione. 
+
+**Enunciato:** Definita $f$ con $A$ aperto e $x_{0}\in A$ definito come punto di max/min locale per $f$ allora sappiamo che: se $f$ è derivabile in $x_{0}$ allora $\nabla f(x_{0})=0$. Ovvero tutte le derivate parziali di $f$ in quel punto sono identicamente nulle.
+
+## Teorema di Sylvester 
+#non_dimostrato 
+**Enunciato:** Data la matrice $M\in \mathbb{R}^{n\times n}$ simmetrica.
+1. M è *definita positiva* $\iff \det(M^{(k)})>0 \quad \forall k$
+2. M è *definita negativa* $\iff (-1)\cdot\det(M^{(k)})>0 \quad \forall k=1,\dots,n$
+
+**Nota bene:** Se M è definita positiva allora gli autovalori sono > 0 e viceversa. Se M è definita negativa allora gli autovalori sono < 0 e viceversa. M è indefinita se esiste almeno un autovalore positivo e uno che invece è negativo.
+
+## Teorema per gli estremi locali di 2° ordine (Condizione necessaria)
+#dimostrato 
+**Enunciato:** Data $f$ differenziabile almeno due volte in A. 
+==Max:== Se $x_{0}$ è un *Massimo Locale* allora:
+$$\begin{cases}
+\nabla f(x_{0})=0 \\
+Hf(x_{0})\leq 0
+\end{cases}$$
+
+inoltre:
+$f_{x_{i}x_{i}}(x_{0})\leq 0$
+
+==min== Se $x_{0}$ è un *min locale* allora:
+$$\begin{cases}
+\nabla f(x_{0})=0 \\
+Hf(x_{0})=0
+\end{cases}$$
+
+inoltre:
+$f_{x_{i}x_{i}}(x_{0})\geq 0$
+
+**Nota bene:** Sia la condizione per il massimo che quella per minimo locale non sono condizioni sufficienti. Es: valutare la funzione $f(x)=x^3$.
+
+## Teorema per gli estremi di 2° ordine (Condizione sufficiente)
+#non_dimostrato 
+**Enunciato:** 
+==Max==
+$$\begin{cases}
+\nabla f(x_{0})=0 \\
+Hf(x_{0}) < 0
+\end{cases} \implies x_{0}\text{ è un punto di Max locale}$$
+
+==min==
+$$\begin{cases}
+\nabla f(x_{0})=0 \\
+Hf(x_{0}) > 0
+\end{cases} \implies x_{0}\text{ è un punto di min locale}$$
+
+### Punto di Sella
+Se $x_{0}$ è un punto critico (vale una delle proprietà sopra) e $Hf(x_{0})$ è indefinita allora $x_{0}$ è detto punto di sella.
+
